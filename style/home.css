@@ -1,0 +1,82 @@
+/*----------------- Style for Home -------------------*/
+/*------------------Fonts----------------*/
+/*------------------Colors----------------*/
+/*------------------Cursor----------------*/
+.one {
+  width: 100vw;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 'text img';
+  cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1160.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1160.png), auto !important;
+}
+
+.one #welcome {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: text;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  margin-left: 7em;
+}
+
+.one #welcome .aaa {
+  font-size: 4em;
+  font-family: "Audiowide", cursive;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.one #welcome #hwel {
+  color: white;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.one #welcome #hwel:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1161.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1161.png), auto !important;
+}
+
+.one #welcome #hmn, .one #welcome #hric {
+  color: #001fe9;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.one #welcome #hmn:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1164.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1164.png), auto !important;
+}
+
+.one #welcome #hric:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1159.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1159.png), auto !important;
+}
+
+.one img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: img;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 4em;
+  border: 10px solid #001fe9;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=home.css.map */

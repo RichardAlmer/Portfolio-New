@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Noto+Sans&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/snake.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Snake</title>
+</head>
+<body>
+    <h1 id="hsnake" data-aos="zoom-in" data-aos-duration="1000">Snake</h1>
+    <div id="control" data-aos="zoom-in" data-aos-duration="1000">
+        <p><b>Control:</b></p>
+        <p>Go Up: Arrow Up</p>
+        <p>Go Down: Arrow Down</p>
+        <p>Go Left: Arrow Left</p>
+        <p>Go Right: Arrow Right</p>
+        <p>To Start: Press an Arrow Key</p>
+    </div>
+    <div id="instructions" data-aos="zoom-in" data-aos-duration="1000">
+        <p><b>Instructions:</b></p>
+        <p>You have to try to eat as many mice (gray) as possible.</p>
+        <p>When it has eaten a mouse, the snake grows.</p>
+        <p>After every fifth mouse the snake gets faster.</p>
+        <p>The game ends when the snake hits the wall or itself.</p>
+    </div>
+    <a id="back" href="../index.html#project">Go Back</a>
+    <div id="start">
+        <h1 id="score">0</h1>
+        <h1 id="snake">Snake</h1>
+        <p id="points">Ponits</p>
+        <input id="gameStart" type="button" value="Start Game"></input>
+    </div>
+    <canvas id="game" width="400" height="400"></canvas>
+    <script src="../script/snake.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

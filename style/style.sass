@@ -1,0 +1,41 @@
+/*----------------- Main Style -------------------*/
+
+@import utility
+
+::-webkit-scrollbar
+    display: none
+
+#container
+    background-color: $color-black
+    scroll-behavior: smooth
+
+    .nav
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 3em
+        width: 100vw
+        background-color: black
+        cursor: $black-cursor
+
+        a
+            text-decoration: none
+            color: lightgrey
+            margin: 0 1.5em
+
+        #ahome:hover
+            color: $color-one
+            cursor: $blue-cursor
+        
+        #aabout:hover
+            color: $color-two
+            cursor: $green-cursor
+
+        #aproject:hover
+            color: $color-three
+            cursor: $yellow-cursor
+
+        #acontact:hover
+            color: $color-four
+            cursor: $red-cursor
+            

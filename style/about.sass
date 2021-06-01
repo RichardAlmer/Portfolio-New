@@ -1,0 +1,135 @@
+/*----------------- Style for About -------------------*/
+
+@import utility
+
+.two
+    width: 100vw
+    height: 100vh
+    cursor: $green-cursor
+    display: grid
+    grid-template-rows: 1fr 1fr
+    grid-template-columns: 1fr 1fr
+    grid-template-areas: 'text text' 'front back'
+
+    #atext
+        grid-area: text
+        justify-self: center
+        align-self: end
+        text-align: center
+
+        h1
+            color: $color-two
+            font-family: $h-font
+            font-weight: bold
+            margin-bottom: 0.7em
+
+        p
+            color: white
+            font-family: $h-font
+
+        #text1
+            font-size: 1.3em
+            margin-bottom: 1em
+
+        #text2
+            font-size: 1.2em
+            margin-bottom: 1em
+            color: $color-two2
+        
+        #text3
+            font-size: 1.2em
+            margin-bottom: 1em
+
+    #front
+        grid-area: front
+        justify-self: center
+        align-self: self-start
+        text-align: center
+
+        p
+            color: white
+            font-family: $h-font
+
+        .bar
+            width: 400px
+            height: 1.5em
+            background-color: lightgray
+            display: flex
+            border-radius: 5px
+            margin: 0.5em 0
+
+            .text
+                width: 100px
+                height: 1.5em
+                background-color: $color-two2
+                text-align: center
+                border-top-left-radius: 5px
+                border-bottom-left-radius: 5px
+                font-weight: bold
+            
+            .balken
+                height: 1.5em
+                background-color: $color-two
+                border-top-right-radius: 5px
+                border-bottom-right-radius: 5px
+            
+            .bhtml
+                width: 270px
+
+            .bcss
+                width: 270px
+            
+            .bjs
+                width: 255px
+
+            .bts
+                width: 210px
+            
+            .bang
+                width: 150px
+
+    #back
+        grid-area: back
+        justify-self: center
+        align-self: self-start
+        text-align: center
+
+        p
+            color: white
+            font-family: $h-font
+
+        .bar
+            width: 400px
+            height: 1.5em
+            background-color: lightgray
+            display: flex
+            border-radius: 5px
+            margin: 0.5em 0
+
+            .text
+                width: 100px
+                height: 1.5em
+                background-color: $color-two2
+                text-align: center
+                border-top-left-radius: 5px
+                border-bottom-left-radius: 5px
+                font-weight: bold
+            
+            .balken
+                height: 1.5em
+                background-color: $color-two
+                border-top-right-radius: 5px
+                border-bottom-right-radius: 5px
+
+            .bphp
+                width: 255px
+
+            .bsql
+                width: 270px
+
+            .bsym
+                width: 180px
+
+            .baja
+                width: 150px
+            

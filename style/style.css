@@ -1,0 +1,55 @@
+/*----------------- Main Style -------------------*/
+/*------------------Fonts----------------*/
+/*------------------Colors----------------*/
+/*------------------Cursor----------------*/
+::-webkit-scrollbar {
+  display: none;
+}
+
+#container {
+  background-color: black;
+  scroll-behavior: smooth;
+}
+
+#container .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3em;
+  width: 100vw;
+  background-color: black;
+  cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1163.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1163.png), auto !important;
+}
+
+#container .nav a {
+  text-decoration: none;
+  color: lightgrey;
+  margin: 0 1.5em;
+}
+
+#container .nav #ahome:hover {
+  color: #001fe9;
+  cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1160.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1160.png), auto !important;
+}
+
+#container .nav #aabout:hover {
+  color: #0ea900;
+  cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1161.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1161.png), auto !important;
+}
+
+#container .nav #aproject:hover {
+  color: #e4f000;
+  cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1164.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1164.png), auto !important;
+}
+
+#container .nav #acontact:hover {
+  color: #d50000;
+  cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1159.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1159.png), auto !important;
+}
+/*# sourceMappingURL=style.css.map */

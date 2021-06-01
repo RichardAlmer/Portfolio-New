@@ -1,0 +1,114 @@
+/*----------------- Style for Project -------------------*/
+
+@import utility
+
+.three
+    width: 100vw
+    height: 100vh
+    cursor: $yellow-cursor
+    display: grid
+    grid-template-rows: 0.9fr 1fr
+    grid-template-columns: 1fr 1fr
+    grid-template-areas: 'text text' 'web game'
+    
+    #ptext
+        grid-area: text
+        justify-self: center
+        align-self: end
+        text-align: center
+
+        h1
+            font-family: $h-font
+            color: $color-three
+            margin-bottom: 1em
+        
+        p
+            color: white
+            font-size: 1.2em
+            margin-bottom: 0.8em
+
+    #web
+        grid-area: web
+        justify-self: center
+        align-self: self-start
+        text-align: center
+        display: grid
+        grid-template-rows: 1fr 2fr 1fr
+        grid-template-columns: 200px 200px
+        grid-template-areas: 'head head' 'foto com' 'gitfoto gitcom'
+
+        h2
+            grid-area: head
+            font-family: $h-font
+            color: $color-three
+            justify-self: center
+            align-self: self-start
+            margin-bottom: 0.5em
+
+        #foto
+            grid-area: foto
+            justify-self: center
+            align-self: self-end
+
+        #gitfoto
+            grid-area: gitfoto
+            justify-self: center
+            align-self: center
+
+        #com
+            grid-area: com
+            justify-self: center
+            align-self: self-end
+
+        #gitcom
+            grid-area: gitcom
+            justify-self: center
+            align-self: center
+        
+        a
+            cursor: $black-cursor
+
+    #game
+        grid-area: game
+        justify-self: center
+        align-self: self-start
+        text-align: center
+        display: grid
+        grid-template-rows: 1fr 2fr
+        grid-template-columns: 200px 200px
+        grid-template-areas: 'head head' 'space snake'
+
+        h2
+            grid-area: head
+            font-family: $h-font
+            color: $color-three
+
+        #space
+            grid-area: space
+            display: flex
+            flex-direction: column
+
+            #aSpace
+                text-decoration: none
+                color: $color-three
+                font-family: $game-font
+                font-size: 0.7em
+                margin-bottom: 0.5em
+            
+            a
+                cursor: $black-cursor
+
+        #snake
+            grid-area: snake
+            display: flex
+            flex-direction: column
+
+            #aSnake
+                text-decoration: none
+                color: $color-three
+                font-family: $game-font
+                font-size: 0.7em
+                margin-bottom: 0.5em
+
+            a
+                cursor: $black-cursor

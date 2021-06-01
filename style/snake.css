@@ -1,0 +1,112 @@
+/*---------------Style for Snake-------------------*/
+/*------------------Fonts----------------*/
+/*------------------Colors----------------*/
+/*------------------Cursor----------------*/
+* {
+  cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1164.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1164.png), auto !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Press Start 2P", cursive;
+  background-color: black;
+}
+
+body canvas {
+  -webkit-box-shadow: 5px 5px 10px black;
+          box-shadow: 5px 5px 10px black;
+  background-color: black;
+  border: 5px solid blue;
+  padding: 0;
+}
+
+body #hsnake {
+  color: #e4f000;
+}
+
+body #control {
+  width: 300px;
+  position: absolute;
+  left: 100px;
+  top: 160px;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+body #control p {
+  color: #e4f000;
+}
+
+body #instructions {
+  width: 300px;
+  position: absolute;
+  right: 70px;
+  top: 150px;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+body #instructions p {
+  color: #e4f000;
+}
+
+body #back {
+  position: absolute;
+  bottom: 40px;
+  color: #e4f000;
+  cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1163.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1163.png), auto !important;
+}
+
+body #back:hover {
+  color: gray;
+}
+
+body #start {
+  width: 200px;
+  height: 125px;
+  border: 5px solid #0022ff;
+  border-radius: 40px;
+  background-color: #0088ff;
+  text-align: center;
+  position: fixed;
+  top: 190px;
+}
+
+body #start #score {
+  margin: 20px 0 0 0;
+  display: none;
+}
+
+body #start #points {
+  margin: 10px 0 0 0;
+  display: none;
+}
+
+body #start #gameStart {
+  width: 8rem;
+  margin: 10px 0 10px 0;
+  background-color: #5eff00;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  outline: none;
+}
+
+body #start #gameStart:hover {
+  background-color: rgba(94, 255, 0, 0.639);
+}
+/*# sourceMappingURL=snake.css.map */

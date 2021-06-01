@@ -1,0 +1,54 @@
+/*----------------- Style for Home -------------------*/
+
+@import utility
+
+.one
+    width: 100vw
+    height: 100vh
+    display: grid
+    grid-template-rows: 1fr
+    grid-template-columns: 1fr 1fr
+    grid-template-areas: 'text img'
+    cursor: $blue-cursor
+
+    #welcome
+        grid-area: text
+        justify-self: center
+        align-self: center
+        text-align: center
+        margin-left: 7em
+        
+        .aaa
+            font-size: 4em
+            font-family: $h-font
+            font-weight: bold
+            text-decoration: none
+            display: inline-block
+
+        #hwel
+            color: white
+            transition: 1s
+
+        #hwel:hover
+            transform: scale(1.1, 1.1)
+            cursor: $green-cursor
+
+        #hmn, #hric
+            color: $color-one
+            transition: 1s
+
+        #hmn:hover
+            transform: scale(1.1, 1.1)
+            cursor: $yellow-cursor
+
+        #hric:hover
+            transform: scale(1.1, 1.1)
+            cursor: $red-cursor
+        
+    img
+        grid-area: img
+        justify-self: center
+        align-self: center
+        margin-right: 4em
+        border: 10px solid $color-one
+        border-radius: 50%

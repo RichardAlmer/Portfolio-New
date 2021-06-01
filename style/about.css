@@ -1,0 +1,184 @@
+/*----------------- Style for About -------------------*/
+/*------------------Fonts----------------*/
+/*------------------Colors----------------*/
+/*------------------Cursor----------------*/
+.two {
+  width: 100vw;
+  height: 100vh;
+  cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1161.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1161.png), auto !important;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 'text text' 'front back';
+}
+
+.two #atext {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: text;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  text-align: center;
+}
+
+.two #atext h1 {
+  color: #0ea900;
+  font-family: "Audiowide", cursive;
+  font-weight: bold;
+  margin-bottom: 0.7em;
+}
+
+.two #atext p {
+  color: white;
+  font-family: "Audiowide", cursive;
+}
+
+.two #atext #text1 {
+  font-size: 1.3em;
+  margin-bottom: 1em;
+}
+
+.two #atext #text2 {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  color: #62ff59;
+}
+
+.two #atext #text3 {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.two #front {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: front;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: self-start;
+      -ms-grid-row-align: self-start;
+      align-self: self-start;
+  text-align: center;
+}
+
+.two #front p {
+  color: white;
+  font-family: "Audiowide", cursive;
+}
+
+.two #front .bar {
+  width: 400px;
+  height: 1.5em;
+  background-color: lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 5px;
+  margin: 0.5em 0;
+}
+
+.two #front .bar .text {
+  width: 100px;
+  height: 1.5em;
+  background-color: #62ff59;
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-weight: bold;
+}
+
+.two #front .bar .balken {
+  height: 1.5em;
+  background-color: #0ea900;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.two #front .bar .bhtml {
+  width: 270px;
+}
+
+.two #front .bar .bcss {
+  width: 270px;
+}
+
+.two #front .bar .bjs {
+  width: 255px;
+}
+
+.two #front .bar .bts {
+  width: 210px;
+}
+
+.two #front .bar .bang {
+  width: 150px;
+}
+
+.two #back {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: back;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: self-start;
+      -ms-grid-row-align: self-start;
+      align-self: self-start;
+  text-align: center;
+}
+
+.two #back p {
+  color: white;
+  font-family: "Audiowide", cursive;
+}
+
+.two #back .bar {
+  width: 400px;
+  height: 1.5em;
+  background-color: lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 5px;
+  margin: 0.5em 0;
+}
+
+.two #back .bar .text {
+  width: 100px;
+  height: 1.5em;
+  background-color: #62ff59;
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-weight: bold;
+}
+
+.two #back .bar .balken {
+  height: 1.5em;
+  background-color: #0ea900;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.two #back .bar .bphp {
+  width: 255px;
+}
+
+.two #back .bar .bsql {
+  width: 270px;
+}
+
+.two #back .bar .bsym {
+  width: 180px;
+}
+
+.two #back .bar .baja {
+  width: 150px;
+}
+/*# sourceMappingURL=about.css.map */

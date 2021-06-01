@@ -1,0 +1,198 @@
+/*----------------- Style for Project -------------------*/
+/*------------------Fonts----------------*/
+/*------------------Colors----------------*/
+/*------------------Cursor----------------*/
+.three {
+  width: 100vw;
+  height: 100vh;
+  cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1164.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1164.png), auto !important;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 0.9fr 1fr;
+      grid-template-rows: 0.9fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 'text text' 'web game';
+}
+
+.three #ptext {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: text;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  text-align: center;
+}
+
+.three #ptext h1 {
+  font-family: "Audiowide", cursive;
+  color: #e4f000;
+  margin-bottom: 1em;
+}
+
+.three #ptext p {
+  color: white;
+  font-size: 1.2em;
+  margin-bottom: 0.8em;
+}
+
+.three #web {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: web;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-row-align: self-start;
+      align-self: self-start;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 2fr 1fr;
+      grid-template-rows: 1fr 2fr 1fr;
+  -ms-grid-columns: 200px 200px;
+      grid-template-columns: 200px 200px;
+      grid-template-areas: 'head head' 'foto com' 'gitfoto gitcom';
+}
+
+.three #web h2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: head;
+  font-family: "Audiowide", cursive;
+  color: #e4f000;
+      justify-self: center;
+  -ms-flex-item-align: self-start;
+      align-self: self-start;
+  margin-bottom: 0.5em;
+}
+
+.three #web #foto {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: foto;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: self-end;
+      -ms-grid-row-align: self-end;
+      align-self: self-end;
+}
+
+.three #web #gitfoto {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: gitfoto;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.three #web #com {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: com;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: self-end;
+      -ms-grid-row-align: self-end;
+      align-self: self-end;
+}
+
+.three #web #gitcom {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: gitcom;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.three #web a {
+  cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1163.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1163.png), auto !important;
+}
+
+.three #game {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: game;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-row-align: self-start;
+      align-self: self-start;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 2fr;
+      grid-template-rows: 1fr 2fr;
+  -ms-grid-columns: 200px 200px;
+      grid-template-columns: 200px 200px;
+      grid-template-areas: 'head head' 'space snake';
+}
+
+.three #game h2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: head;
+  font-family: "Audiowide", cursive;
+  color: #e4f000;
+}
+
+.three #game #space {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: space;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.three #game #space #aSpace {
+  text-decoration: none;
+  color: #e4f000;
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.7em;
+  margin-bottom: 0.5em;
+}
+
+.three #game #space a {
+  cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1163.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1163.png), auto !important;
+}
+
+.three #game #snake {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: snake;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.three #game #snake #aSnake {
+  text-decoration: none;
+  color: #e4f000;
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.7em;
+  margin-bottom: 0.5em;
+}
+
+.three #game #snake a {
+  cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1163.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1163.png), auto !important;
+}
+/*# sourceMappingURL=project.css.map */
