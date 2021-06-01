@@ -25,6 +25,7 @@
   width: 100vw;
   background-color: black;
   cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1163.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1163.png), auto !important;
+  z-index: 8;
 }
 
 #container .nav a {

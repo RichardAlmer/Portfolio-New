@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Noto+Sans&family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/home.css">
@@ -18,11 +19,11 @@
     <div id="container">
         <div id="home" class="page one">
             <div id="welcome">
-                <a id="hwel" class="aaa" href="#about">Welcome</a>
-                <a id="hmn" class="aaa" href="#project">My Name is</a>
-                <a id="hric" class="aaa" href="#contact">Richard</a>
+                <a id="hwel" class="aaa" href="#about" data-aos="fade-down" data-aos-duration="1000">Welcome</a>
+                <a id="hmn" class="aaa" href="#project" data-aos="fade-right" data-aos-duration="1000">My Name is</a>
+                <a id="hric" class="aaa" href="#contact" data-aos="fade-up" data-aos-duration="1000">Richard</a>
             </div>
-            <img src="image/ich.png" alt="Richard Almer" width="250px">
+            <img src="image/ich.png" alt="Richard Almer" width="250px" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="2000">
         </div>
         <div class="nav">
             <a id="ahome" href="#home">Home</a>
@@ -41,42 +42,42 @@
                 <p>Front-End:</p>
                 <div class="bar">
                     <div class="text">HTML</div>
-                    <div class="balken bhtml"></div>
+                    <div class="balken bhtml" data-aos="fade-right"></div>
                 </div>
                 <div class="bar">
                     <div class="text">CSS</div>
-                    <div class="balken bcss"></div>
+                    <div class="balken bcss" data-aos="fade-right"></div>
                 </div>
                 <div class="bar">
                     <div class="text">JavaScript</div>
-                    <div class="balken bjs"></div>
+                    <div class="balken bjs" data-aos="fade-right"></div>
                 </div>
                 <div class="bar">
                     <div class="text">Typescript</div>
-                    <div class="balken bts"></div>
+                    <div class="balken bts" data-aos="fade-right"></div>
                 </div>
                 <div class="bar">
                     <div class="text">Angular</div>
-                    <div class="balken bang"></div>
+                    <div class="balken bang" data-aos="fade-right"></div>
                 </div>
             </div>
             <div id="back">
                 <p>Back-End:</p>
                 <div class="bar">
                     <div class="text">PHP</div>
-                    <div class="balken bphp"></div>
+                    <div class="balken bphp" data-aos="fade-right"></div>
                 </div>
                 <div class="bar">
                     <div class="text">MySQL</div>
-                    <div class="balken bsql"></div>
+                    <div class="balken bsql" data-aos="fade-right"></div>
                 </div>
                 <div class="bar">
                     <div class="text">Symfony</div>
-                    <div class="balken bsym"></div>
+                    <div class="balken bsym" data-aos="fade-right"></div>
                 </div>
                 <div class="bar">
                     <div class="text">AJAX/API</div>
-                    <div class="balken baja"></div>
+                    <div class="balken baja" data-aos="fade-right"></div>
                 </div>
             </div>
         </div>
@@ -89,20 +90,20 @@
             </div>
             <div id="web">
                 <h2>Websites</h2>
-                <a id="foto" href="Photography/index.html"><img src="image/project.png" alt="fotographer" width="100px"></a>
+                <a id="foto" href="Photography/index.html"><img src="image/project.png" alt="fotographer" width="100px" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"></a>
                 <a id="gitfoto" href="https://github.com/RichardAlmer/Front-End-Project.git"><img src="image/GitHub-Mark-Light-64px.png" alt="github" width="25px"></a>
-                <img id="com" src="image/ecommerce.png" alt="ecommerce" width="100px">
+                <img id="com" src="image/ecommerce.png" alt="ecommerce" width="100px" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 <a id="gitcom" href="https://github.com/RichardAlmer/FullStack-Project.git"><img src="image/GitHub-Mark-Light-64px.png" alt="github" width="25px"></a>
             </div>
             <div id="game">
                 <h2>Games</h2>
                 <div id="space">
                     <a id="aSpace" href="HTML/space.html">Space War</a>
-                    <a id="aImgSpace" href="HTML/space.html"><img src="image/space.png" alt="space" width="100px"></a>
+                    <a id="aImgSpace" href="HTML/space.html"><img src="image/space.png" alt="space" width="100px" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"></a>
                 </div>
                 <div id="snake">
                     <a id="aSnake" href="HTML/snake.html">Snake</a>
-                    <a id="aImg" href="HTML/snake.html"><img src="image/snake.png" alt="snake" width="100px"></a>
+                    <a id="aImg" href="HTML/snake.html"><img src="image/snake.png" alt="snake" width="100px" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"></a>
                 </div>
             </div>
         </div>
@@ -121,6 +122,10 @@
             </div>
         </div>            
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src="script/stickUp.min.js"></script>
     <script src="script/script.js"></script>
