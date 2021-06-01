@@ -106,11 +106,11 @@
 }
 
 .two #front .bar .bcss {
-  width: 270px;
+  width: 210px;
 }
 
 .two #front .bar .bjs {
-  width: 255px;
+  width: 270px;
 }
 
 .two #front .bar .bts {
@@ -167,7 +167,7 @@
 }
 
 .two #back .bar .bphp {
-  width: 255px;
+  width: 270px;
 }
 
 .two #back .bar .bsql {

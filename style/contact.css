@@ -6,5 +6,74 @@
   width: 100vw;
   height: 100vh;
   cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1159.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1159.png), auto !important;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 3em;
+      grid-template-rows: 1fr 1fr 3em;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: 'text' 'icon' 'footer';
+}
+
+.four #ctext {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: text;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: self-end;
+      -ms-grid-row-align: self-end;
+      align-self: self-end;
+  text-align: center;
+}
+
+.four #ctext h1 {
+  font-family: "Audiowide", cursive;
+  color: #d50000;
+  margin-bottom: 1.4em;
+}
+
+.four #ctext p {
+  color: white;
+  font-family: "Audiowide", cursive;
+  font-size: 1.2em;
+}
+
+.four #icon {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: icon;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.four #icon #mail {
+  text-decoration: none;
+  color: #d50000;
+  font-size: 2.2em;
+  font-weight: bold;
+  cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1163.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1163.png), auto !important;
+  margin-right: 1em;
+}
+
+.four #icon #gitpor {
+  position: relative;
+  bottom: 0.5em;
+}
+
+.four #footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: self-start;
+      -ms-grid-row-align: self-start;
+      align-self: self-start;
+  color: white;
+  font-size: 0.8em;
 }
 /*# sourceMappingURL=contact.css.map */

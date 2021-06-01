@@ -6,3 +6,47 @@
     width: 100vw
     height: 100vh
     cursor: $red-cursor
+    display: grid
+    grid-template-rows: 1fr 1fr 3em
+    grid-template-columns: 1fr
+    grid-template-areas: 'text' 'icon' 'footer'
+
+    #ctext
+        grid-area: text
+        justify-self: center
+        align-self: self-end
+        text-align: center
+
+        h1
+            font-family: $h-font
+            color: $color-four
+            margin-bottom: 1.4em
+
+        p
+            color: white
+            font-family: $h-font
+            font-size: 1.2em
+
+    #icon
+        grid-area: icon
+        justify-self: center
+        align-self: center
+
+        #mail
+            text-decoration: none
+            color: $color-four
+            font-size: 2.2em
+            font-weight: bold
+            cursor: $black-cursor
+            margin-right: 1em
+        
+        #gitpor
+            position: relative
+            bottom: 0.5em
+
+    #footer
+        grid-area: footer
+        justify-self: center
+        align-self: self-start
+        color: white
+        font-size: 0.8em

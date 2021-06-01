@@ -31,6 +31,7 @@
   text-decoration: none;
   color: lightgrey;
   margin: 0 1.5em;
+  font-family: "Audiowide", cursive;
 }
 
 #container .nav #ahome:hover {
