@@ -2,31 +2,61 @@
 /*------------------Fonts----------------*/
 /*------------------Colors----------------*/
 /*------------------Cursor----------------*/
+/* Media Queries */
 * {
   cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1164.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1164.png), auto !important;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: "Press Start 2P", cursive;
   background-color: black;
 }
 
-body canvas {
+body #container {
+  width: 100vw;
+  height: auto;
+  font-family: "Press Start 2P", cursive;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 5em 1fr 5em;
+      grid-template-rows: 5em 1fr 5em;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas: 'head head head' 'control game instract' 'back back back';
+}
+
+@media screen and (min-width: 801px) and (max-width: 1020px) {
+  body #container {
+    -ms-grid-rows: 5em 1fr 5em 10em 17em;
+        grid-template-rows: 5em 1fr 5em 10em 17em;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'head' 'game' 'back' 'control' 'instract';
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body #container {
+    -ms-grid-rows: 5em 1fr 5em 9em 16em;
+        grid-template-rows: 5em 1fr 5em 9em 16em;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'head' 'game' 'back' 'control' 'instract';
+  }
+}
+
+body #container canvas {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: game;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   -webkit-box-shadow: 5px 5px 10px black;
           box-shadow: 5px 5px 10px black;
   background-color: black;
@@ -34,69 +64,102 @@ body canvas {
   padding: 0;
 }
 
-body #hsnake {
+body #container #hsnake {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: head;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   color: #e4f000;
 }
 
-body #control {
+body #container #control {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: control;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   width: 300px;
-  position: absolute;
-  left: 100px;
-  top: 160px;
   text-align: center;
   font-size: 0.8em;
 }
 
-body #control p {
+body #container #control p {
   color: #e4f000;
 }
 
-body #instructions {
+body #container #instructions {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: instract;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   width: 300px;
-  position: absolute;
-  right: 70px;
-  top: 150px;
   text-align: center;
   font-size: 0.8em;
 }
 
-body #instructions p {
+body #container #instructions p {
   color: #e4f000;
 }
 
-body #back {
-  position: absolute;
-  bottom: 40px;
+body #container #back {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: back;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   color: #e4f000;
   cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1163.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1163.png), auto !important;
 }
 
-body #back:hover {
+body #container #back:hover {
   color: gray;
 }
 
-body #start {
+body #container #start {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: game;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   width: 200px;
   height: 125px;
   border: 5px solid #0022ff;
   border-radius: 40px;
   background-color: #0088ff;
   text-align: center;
-  position: fixed;
-  top: 190px;
+  z-index: 5;
 }
 
-body #start #score {
+body #container #start #score {
   margin: 20px 0 0 0;
   display: none;
 }
 
-body #start #points {
+body #container #start #points {
   margin: 10px 0 0 0;
   display: none;
 }
 
-body #start #gameStart {
+body #container #start #gameStart {
   width: 8rem;
   margin: 10px 0 10px 0;
   background-color: #5eff00;
@@ -106,7 +169,7 @@ body #start #gameStart {
   outline: none;
 }
 
-body #start #gameStart:hover {
+body #container #start #gameStart:hover {
   background-color: rgba(94, 255, 0, 0.639);
 }
 /*# sourceMappingURL=snake.css.map */

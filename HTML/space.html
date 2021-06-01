@@ -11,27 +11,29 @@
     <title>Space</title>
 </head>
 <body>
-    <h1 id="hspace" data-aos="zoom-in" data-aos-duration="1000">Space War</h1>
-    <div id="control" data-aos="zoom-in" data-aos-duration="1000">
-        <p><b>Control:</b></p>
-        <p>Move Left/Right: Move Mouse</p>
-        <p>Shoot: Left Mousekey</p>
+    <div id="container">
+        <h1 id="hspace" data-aos="zoom-in" data-aos-duration="1000">Space War</h1>
+        <div id="control" data-aos="zoom-in" data-aos-duration="1000">
+            <p><b>Control:</b></p>
+            <p>Move Left/Right: Move Mouse</p>
+            <p>Shoot: Left Mousekey</p>
+        </div>
+        <div id="instructions" data-aos="zoom-in" data-aos-duration="1000">
+            <p><b>Instructions:</b></p>
+            <p>Shoot down as many Spaceships as you can.</p>
+            <p>When you've shot them all, the next ones will come.</p>
+            <p>The game ends when you have been shot 3 times,</p>
+            <p>or the enemy spaceships cross the gray line.</p>
+        </div>
+        <a id="back" href="../index.html#project">Go Back</a>
+        <div id="start">
+            <h1 id="score">0</h1>
+            <h1 id="space">Space War</h1>
+            <p id="points">Ponits</p>
+            <input id="gameStart" type="button" value="Start Game"></input>
+        </div>
+        <canvas id="game" width="400" height="400"></canvas>
     </div>
-    <div id="instructions" data-aos="zoom-in" data-aos-duration="1000">
-        <p><b>Instructions:</b></p>
-        <p>Shoot down as many Spaceships as you can.</p>
-        <p>When you've shot them all, the next ones will come.</p>
-        <p>The game ends when you have been shot 3 times,</p>
-        <p>or the enemy spaceships cross the gray line.</p>
-    </div>
-    <a id="back" href="../index.html#project">Go Back</a>
-    <div id="start">
-        <h1 id="score">0</h1>
-        <h1 id="space">Space War</h1>
-        <p id="points">Ponits</p>
-        <input id="gameStart" type="button" value="Start Game"></input>
-    </div>
-    <canvas id="game" width="400" height="400"></canvas>
     <script src="../script/space.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
