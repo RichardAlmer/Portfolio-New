@@ -2,6 +2,7 @@
 /*------------------Fonts----------------*/
 /*------------------Colors----------------*/
 /*------------------Cursor----------------*/
+/* Media Queries */
 .one {
   width: 100vw;
   height: 100vh;
@@ -13,6 +14,17 @@
       grid-template-columns: 1fr 1fr;
       grid-template-areas: 'text img';
   cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1160.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1160.png), auto !important;
+}
+
+@media screen and (max-width: 800px) {
+  .one {
+    height: auto;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'text' 'img';
+  }
 }
 
 .one #welcome {
@@ -28,12 +40,30 @@
   margin-left: 7em;
 }
 
+@media screen and (max-width: 800px) {
+  .one #welcome {
+    margin-left: 0;
+  }
+}
+
 .one #welcome .aaa {
   font-size: 4em;
   font-family: "Audiowide", cursive;
   font-weight: bold;
   text-decoration: none;
   display: inline-block;
+}
+
+@media screen and (min-width: 801px) and (max-width: 1020px) {
+  .one #welcome .aaa {
+    font-size: 2.8em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .one #welcome .aaa {
+    font-size: 3em;
+  }
 }
 
 .one #welcome #hwel {
@@ -78,5 +108,12 @@
   margin-right: 4em;
   border: 10px solid #001fe9;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  .one img {
+    margin-right: 0;
+    margin-bottom: 4em;
+  }
 }
 /*# sourceMappingURL=home.css.map */

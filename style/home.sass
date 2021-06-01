@@ -1,6 +1,7 @@
 /*----------------- Style for Home -------------------*/
 
 @import utility
+@import mQ
 
 .one
     width: 100vw
@@ -10,6 +11,11 @@
     grid-template-columns: 1fr 1fr
     grid-template-areas: 'text img'
     cursor: $blue-cursor
+    @include tablet
+        height: auto
+        grid-template-rows: 1fr 1fr
+        grid-template-columns: 1fr
+        grid-template-areas: 'text' 'img'
 
     #welcome
         grid-area: text
@@ -17,6 +23,8 @@
         align-self: center
         text-align: center
         margin-left: 7em
+        @include tablet
+            margin-left: 0
         
         .aaa
             font-size: 4em
@@ -24,6 +32,10 @@
             font-weight: bold
             text-decoration: none
             display: inline-block
+            @include smallScreen
+                font-size: 2.8em
+            @include tablet
+                font-size: 3em
 
         #hwel
             color: white
@@ -52,3 +64,6 @@
         margin-right: 4em
         border: 10px solid $color-one
         border-radius: 50%
+        @include tablet
+            margin-right: 0
+            margin-bottom: 4em

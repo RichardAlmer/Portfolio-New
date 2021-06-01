@@ -1,6 +1,7 @@
 /*----------------- Style for Project -------------------*/
 
 @import utility
+@import mQ
 
 .three
     width: 100vw
@@ -10,6 +11,11 @@
     grid-template-rows: 0.9fr 1fr
     grid-template-columns: 1fr 1fr
     grid-template-areas: 'text text' 'web game'
+    @include tablet
+        height: auto
+        grid-template-rows: 1fr 1fr 1fr
+        grid-template-columns: 1fr
+        grid-template-areas: 'text' 'web' 'game'
     
     #ptext
         grid-area: text
@@ -37,6 +43,10 @@
         grid-template-rows: 1fr 2fr 1fr
         grid-template-columns: 200px 200px
         grid-template-areas: 'head head' 'foto com' 'gitfoto gitcom'
+        @include phone
+            grid-template-rows: 1fr 1fr 1fr
+            grid-template-columns: 150px 150px
+            margin-top: 3em
 
         h2
             grid-area: head
@@ -78,6 +88,10 @@
         grid-template-rows: 1fr 2fr
         grid-template-columns: 200px 200px
         grid-template-areas: 'head head' 'space snake'
+        @include phone
+            grid-template-rows: 1fr 1fr
+            grid-template-columns: 150px 150px
+            margin-top: 3em
 
         h2
             grid-area: head

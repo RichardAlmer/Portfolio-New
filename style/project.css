@@ -2,6 +2,7 @@
 /*------------------Fonts----------------*/
 /*------------------Colors----------------*/
 /*------------------Cursor----------------*/
+/* Media Queries */
 .three {
   width: 100vw;
   height: 100vh;
@@ -13,6 +14,17 @@
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
       grid-template-areas: 'text text' 'web game';
+}
+
+@media screen and (max-width: 800px) {
+  .three {
+    height: auto;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'text' 'web' 'game';
+  }
 }
 
 .three #ptext {
@@ -57,6 +69,16 @@
   -ms-grid-columns: 200px 200px;
       grid-template-columns: 200px 200px;
       grid-template-areas: 'head head' 'foto com' 'gitfoto gitcom';
+}
+
+@media screen and (max-width: 480px) {
+  .three #web {
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    -ms-grid-columns: 150px 150px;
+        grid-template-columns: 150px 150px;
+    margin-top: 3em;
+  }
 }
 
 .three #web h2 {
@@ -136,6 +158,16 @@
   -ms-grid-columns: 200px 200px;
       grid-template-columns: 200px 200px;
       grid-template-areas: 'head head' 'space snake';
+}
+
+@media screen and (max-width: 480px) {
+  .three #game {
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: 150px 150px;
+        grid-template-columns: 150px 150px;
+    margin-top: 3em;
+  }
 }
 
 .three #game h2 {

@@ -2,6 +2,7 @@
 /*------------------Fonts----------------*/
 /*------------------Colors----------------*/
 /*------------------Cursor----------------*/
+/* Media Queries */
 ::-webkit-scrollbar {
   display: none;
 }
@@ -33,6 +34,12 @@
   color: lightgrey;
   margin: 0 1.5em;
   font-family: "Audiowide", cursive;
+}
+
+@media screen and (max-width: 480px) {
+  #container .nav a {
+    margin: 0 0.5em;
+  }
 }
 
 #container .nav #ahome:hover {

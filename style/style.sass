@@ -1,6 +1,7 @@
 /*----------------- Main Style -------------------*/
 
 @import utility
+@import mQ
 
 ::-webkit-scrollbar
     display: none
@@ -24,6 +25,8 @@
             color: lightgrey
             margin: 0 1.5em
             font-family: $h-font
+            @include phone
+                margin: 0 0.5em
 
         #ahome:hover
             color: $color-one

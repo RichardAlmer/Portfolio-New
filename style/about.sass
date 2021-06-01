@@ -1,6 +1,7 @@
 /*----------------- Style for About -------------------*/
 
 @import utility
+@import mQ
 
 .two
     width: 100vw
@@ -10,12 +11,20 @@
     grid-template-rows: 1fr 1fr
     grid-template-columns: 1fr 1fr
     grid-template-areas: 'text text' 'front back'
+    @include tablet
+        height: auto
+        grid-template-rows: 1fr 1fr 1fr
+        grid-template-columns: 1fr
+        grid-template-areas: 'text' 'front' 'back'
 
     #atext
         grid-area: text
         justify-self: center
         align-self: end
         text-align: center
+        @include tablet
+            margin-top: 3em
+
 
         h1
             color: $color-two
@@ -45,6 +54,8 @@
         justify-self: center
         align-self: self-start
         text-align: center
+        @include tablet
+            margin-top: 2.5em
 
         p
             color: white
@@ -57,6 +68,10 @@
             display: flex
             border-radius: 5px
             margin: 0.5em 0
+            @include smallScreen
+                width: 350px
+            @include phone
+                width: 300px
 
             .text
                 width: 100px
@@ -76,18 +91,38 @@
             
             .bhtml
                 width: 270px
+                @include smallScreen
+                    width: 225px
+                @include phone
+                    width: 180px
 
             .bcss
                 width: 210px
+                @include smallScreen
+                    width: 175px
+                @include phone
+                    width: 140px
             
             .bjs
                 width: 270px
+                @include smallScreen
+                    width: 225px
+                @include phone
+                    width: 180px
 
             .bts
                 width: 210px
+                @include smallScreen
+                    width: 175px
+                @include phone
+                    width: 140px
             
             .bang
                 width: 150px
+                @include smallScreen
+                    width: 125px
+                @include phone
+                    width: 100px
 
     #back
         grid-area: back
@@ -106,6 +141,10 @@
             display: flex
             border-radius: 5px
             margin: 0.5em 0
+            @include smallScreen
+                width: 350px
+            @include phone
+                width: 300px
 
             .text
                 width: 100px
@@ -125,13 +164,29 @@
 
             .bphp
                 width: 270px
+                @include smallScreen
+                    width: 225px
+                @include phone
+                    width: 180px
 
             .bsql
                 width: 270px
+                @include smallScreen
+                    width: 225px
+                @include phone
+                    width: 180px
 
             .bsym
                 width: 180px
+                @include smallScreen
+                    width: 150px
+                @include phone
+                    width: 120px
 
             .baja
                 width: 150px
+                @include smallScreen
+                    width: 125px
+                @include phone
+                    width: 100px
             
