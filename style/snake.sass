@@ -11,6 +11,10 @@
 
 body
     background-color: $color-black
+    overflow-x: hidden
+    overflow-y: hidden
+    @include smallScreen
+        overflow-y: auto
 
     #container
         width: 100vw
