@@ -64,6 +64,16 @@
   bottom: 0.5em;
 }
 
+.four #icon #linkedin {
+  position: relative;
+  bottom: 0.5em;
+  margin-left: 2.2em;
+}
+
+.four #icon #linkedin img {
+  width: 25px;
+}
+
 .four #footer {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
