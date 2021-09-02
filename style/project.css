@@ -64,17 +64,17 @@
   text-align: center;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 2fr 1fr;
-      grid-template-rows: 1fr 2fr 1fr;
+  -ms-grid-rows: 4em 12em;
+      grid-template-rows: 4em 12em;
   -ms-grid-columns: 200px 200px;
       grid-template-columns: 200px 200px;
-      grid-template-areas: 'head head' 'foto com' 'gitfoto gitcom';
+      grid-template-areas: 'head head' 'foto com';
 }
 
 @media screen and (max-width: 480px) {
   .three #web {
-    -ms-grid-rows: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+    -ms-grid-rows: 4em 12em;
+        grid-template-rows: 4em 12em;
     -ms-grid-columns: 150px 150px;
         grid-template-columns: 150px 150px;
     margin-top: 3em;
@@ -94,48 +94,52 @@
   margin-bottom: 0.5em;
 }
 
-.three #web #foto {
+.three #web #fotoDiv {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: foto;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: self-end;
-      -ms-grid-row-align: self-end;
-      align-self: self-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.three #web #gitfoto {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: gitfoto;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+.three #web #fotoDiv #aAngular {
+  font-family: "Noto Sans", sans-serif;
+  text-decoration: none;
+  color: #e4f000;
+  margin-bottom: 0.5em;
 }
 
-.three #web #com {
+.three #web #fotoDiv #gitfoto {
+  margin-top: 0.5em;
+}
+
+.three #web #comDiv {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: com;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: self-end;
-      -ms-grid-row-align: self-end;
-      align-self: self-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.three #web #gitcom {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: gitcom;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+.three #web #comDiv #aPHP {
+  font-family: "Noto Sans", sans-serif;
+  text-decoration: none;
+  color: #e4f000;
+  margin-bottom: 0.5em;
+}
+
+.three #web #comDiv #gitcom {
+  margin-top: 0.8em;
 }
 
 .three #web a {
@@ -153,8 +157,8 @@
   text-align: center;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 2fr;
-      grid-template-rows: 1fr 2fr;
+  -ms-grid-rows: 4em 12em;
+      grid-template-rows: 4em 12em;
   -ms-grid-columns: 200px 200px;
       grid-template-columns: 200px 200px;
       grid-template-areas: 'head head' 'space snake';
@@ -162,8 +166,8 @@
 
 @media screen and (max-width: 480px) {
   .three #game {
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    -ms-grid-rows: 4em 12em;
+        grid-template-rows: 4em 12em;
     -ms-grid-columns: 150px 150px;
         grid-template-columns: 150px 150px;
     margin-top: 3em;
@@ -200,8 +204,8 @@
   margin-bottom: 0.5em;
 }
 
-.three #game #space a {
-  cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1163.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1163.png), auto !important;
+.three #game #space #gitSpace {
+  margin-top: 0.5em;
 }
 
 .three #game #snake {
@@ -225,7 +229,11 @@
   margin-bottom: 0.5em;
 }
 
-.three #game #snake a {
+.three #game #snake #gitSnake {
+  margin-top: 0.5em;
+}
+
+.three #game a {
   cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1163.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1163.png), auto !important;
 }
 /*# sourceMappingURL=project.css.map */

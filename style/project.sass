@@ -40,11 +40,11 @@
         align-self: self-start
         text-align: center
         display: grid
-        grid-template-rows: 1fr 2fr 1fr
+        grid-template-rows: 4em 12em
         grid-template-columns: 200px 200px
-        grid-template-areas: 'head head' 'foto com' 'gitfoto gitcom'
+        grid-template-areas: 'head head' 'foto com'
         @include phone
-            grid-template-rows: 1fr 1fr 1fr
+            grid-template-rows: 4em 12em
             grid-template-columns: 150px 150px
             margin-top: 3em
 
@@ -56,26 +56,34 @@
             align-self: self-start
             margin-bottom: 0.5em
 
-        #foto
+        #fotoDiv
             grid-area: foto
-            justify-self: center
-            align-self: self-end
+            display: flex
+            flex-direction: column
 
-        #gitfoto
-            grid-area: gitfoto
-            justify-self: center
-            align-self: center
+            #aAngular
+                font-family: $cont-font
+                text-decoration: none
+                color: $color-three
+                margin-bottom: 0.5em
 
-        #com
+            #gitfoto
+                margin-top: 0.5em
+
+        #comDiv
             grid-area: com
-            justify-self: center
-            align-self: self-end
+            display: flex
+            flex-direction: column
 
-        #gitcom
-            grid-area: gitcom
-            justify-self: center
-            align-self: center
-        
+            #aPHP
+                font-family: $cont-font
+                text-decoration: none
+                color: $color-three
+                margin-bottom: 0.5em
+
+            #gitcom
+                margin-top: 0.8em
+            
         a
             cursor: $black-cursor
 
@@ -85,11 +93,11 @@
         align-self: self-start
         text-align: center
         display: grid
-        grid-template-rows: 1fr 2fr
+        grid-template-rows: 4em 12em
         grid-template-columns: 200px 200px
         grid-template-areas: 'head head' 'space snake'
         @include phone
-            grid-template-rows: 1fr 1fr
+            grid-template-rows: 4em 12em
             grid-template-columns: 150px 150px
             margin-top: 3em
 
@@ -110,8 +118,8 @@
                 font-size: 0.7em
                 margin-bottom: 0.5em
             
-            a
-                cursor: $black-cursor
+            #gitSpace
+                margin-top: 0.5em
 
         #snake
             grid-area: snake
@@ -125,5 +133,8 @@
                 font-size: 0.7em
                 margin-bottom: 0.5em
 
-            a
-                cursor: $black-cursor
+            #gitSnake
+                margin-top: 0.5em
+
+        a
+            cursor: $black-cursor
