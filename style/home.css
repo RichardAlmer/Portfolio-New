@@ -13,7 +13,7 @@
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
       grid-template-areas: 'text img';
-  cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1160.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1160.png), auto !important;
+  cursor: url(cursor/tailless_blue.png), auto !important;
 }
 
 @media screen and (max-width: 800px) {
@@ -75,7 +75,7 @@
 .one #welcome #hwel:hover {
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
-  cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1161.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1161.png), auto !important;
+  cursor: url(cursor/tailless_green.png), auto !important;
 }
 
 .one #welcome #hmn, .one #welcome #hric {
@@ -87,13 +87,13 @@
 .one #welcome #hmn:hover {
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
-  cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1164.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1164.png), auto !important;
+  cursor: url(cursor/tailless_yellow.png), auto !important;
 }
 
 .one #welcome #hric:hover {
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
-  cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1159.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1159.png), auto !important;
+  cursor: url(cursor/tailless_red.png), auto !important;
 }
 
 .one img {

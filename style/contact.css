@@ -5,7 +5,7 @@
 .four {
   width: 100vw;
   height: 100vh;
-  cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1159.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1159.png), auto !important;
+  cursor: url(cursor/tailless_red.png), auto !important;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr 1fr 3em;
@@ -55,21 +55,21 @@
   color: #d50000;
   font-size: 2.2em;
   font-weight: bold;
-  cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1163.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1163.png), auto !important;
+  cursor: url(cursor/tailless_grey.png), auto !important;
   margin-right: 1em;
 }
 
 .four #icon #gitpor {
   position: relative;
   bottom: 0.5em;
-  cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1163.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1163.png), auto !important;
+  cursor: url(cursor/tailless_grey.png), auto !important;
 }
 
 .four #icon #linkedin {
   position: relative;
   bottom: 0.5em;
   margin-left: 2.2em;
-  cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1163.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1163.png), auto !important;
+  cursor: url(cursor/tailless_grey.png), auto !important;
 }
 
 .four #icon #linkedin img {

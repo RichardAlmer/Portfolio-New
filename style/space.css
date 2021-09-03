@@ -8,7 +8,7 @@
 }
 
 html {
-  cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1164.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1164.png), auto !important;
+  cursor: url(cursor/tailless_yellow.png), auto !important;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -23,7 +23,7 @@ body #container {
   width: 100vw;
   height: auto;
   font-family: "Press Start 2P", cursive;
-  cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1164.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1164.png), auto !important;
+  cursor: url(cursor/tailless_yellow.png), auto !important;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 5em 1fr 5em;
@@ -122,7 +122,7 @@ body #container #back {
   -ms-grid-column-span: 3;
   grid-area: back;
   color: #e4f000;
-  cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1163.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1163.png), auto !important;
+  cursor: url(cursor/tailless_grey.png), auto !important;
   -ms-grid-column-align: center;
       justify-self: center;
   -ms-flex-item-align: center;
@@ -174,7 +174,7 @@ body #container #start #gameStart {
   border-radius: 10px;
   padding: 5px 10px;
   outline: none;
-  cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1164.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1164.png), auto !important;
+  cursor: url(cursor/tailless_yellow.png), auto !important;
 }
 
 body #container #start #gameStart:hover {

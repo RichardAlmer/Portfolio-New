@@ -6,7 +6,7 @@
 .three {
   width: 100vw;
   height: 100vh;
-  cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1164.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1164.png), auto !important;
+  cursor: url(cursor/tailless_yellow.png), auto !important;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 0.9fr 1fr;
@@ -143,7 +143,7 @@
 }
 
 .three #web a {
-  cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1163.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1163.png), auto !important;
+  cursor: url(cursor/tailless_grey.png), auto !important;
 }
 
 .three #game {
@@ -234,6 +234,6 @@
 }
 
 .three #game a {
-  cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1163.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1163.png), auto !important;
+  cursor: url(cursor/tailless_grey.png), auto !important;
 }
 /*# sourceMappingURL=project.css.map */
