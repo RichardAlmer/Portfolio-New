@@ -143,6 +143,10 @@
 }
 
 .three #web a {
+  cursor: url(cursor/tailless_yellow.png), auto !important;
+}
+
+.three #web img {
   cursor: url(cursor/tailless_grey.png), auto !important;
 }
 
@@ -234,6 +238,10 @@
 }
 
 .three #game a {
+  cursor: url(cursor/tailless_yellow.png), auto !important;
+}
+
+.three #game img {
   cursor: url(cursor/tailless_grey.png), auto !important;
 }
 /*# sourceMappingURL=project.css.map */
