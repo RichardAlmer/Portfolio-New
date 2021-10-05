@@ -1,0 +1,87 @@
+/* Stylesheet for Menu */
+
+@import colorfont
+@import mQ
+@import cardPlacement
+
+
+#main
+    display: grid
+    grid-template-rows: 15rem 6rem 45rem 6rem 85rem 6rem 45rem 6rem 45rem
+    grid-template-columns: 1fr
+    grid-template-areas: "menu" "starters" "starterDiv" "MC" "MCDiv" "desserts" "dessertDiv" "beverages" "bevDiv"
+    background-color: $secondary
+    padding: 0 5vw
+    @include tablet
+        grid-template-rows: 15rem 6rem 90rem 6rem 170rem 6rem 90rem 6rem 90rem
+        
+    @include phone
+        grid-template-rows: 15rem 6rem 180rem 6rem 340rem 6rem 180rem 6rem 180rem
+    
+    #menu
+        grid-area: menu
+        justify-self: center
+        align-self: center
+        font-family: $primary-font
+        font-size: 4rem
+        text-shadow: 3px 3px 5px #c4c4c4
+
+    #starters
+        grid-area: starters
+        justify-self: center
+        align-self: self-start
+        font-family: $primary-font
+        font-size: 3rem
+        text-shadow: 3px 3px 5px #c4c4c4
+
+    #starterDiv
+        grid-area: starterDiv
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+
+    #MC
+        grid-area: MC
+        justify-self: center
+        align-self: self-start
+        font-family: $primary-font
+        font-size: 3rem
+        text-shadow: 3px 3px 5px #c4c4c4
+        padding-top: 1rem
+
+    #MCDiv
+        grid-area: MCDiv
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        
+
+    #desserts
+        grid-area: desserts
+        justify-self: center
+        align-self: self-start
+        font-family: $primary-font
+        font-size: 3rem
+        text-shadow: 3px 3px 5px #c4c4c4
+        padding-top: 1rem
+
+    #dessertDiv
+        grid-area: dessertDiv
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+
+    #beverages
+        grid-area: beverages
+        justify-self: center
+        align-self: self-start
+        font-family: $primary-font
+        font-size: 3rem
+        text-shadow: 3px 3px 5px #c4c4c4
+        padding-top: 1rem
+
+    #bevDiv
+        grid-area: bevDiv
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap

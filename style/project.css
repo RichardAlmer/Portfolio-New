@@ -5,7 +5,7 @@
 /* Media Queries */
 .three {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   cursor: url(cursor/tailless_yellow.png), auto !important;
   display: -ms-grid;
   display: grid;
@@ -13,7 +13,7 @@
       grid-template-rows: 0.9fr 1fr;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-      grid-template-areas: 'text text' 'web game';
+      grid-template-areas: 'text text' 'fe be';
 }
 
 @media screen and (max-width: 800px) {
@@ -23,7 +23,7 @@
         grid-template-rows: 1fr 1fr 1fr;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas: 'text' 'web' 'game';
+        grid-template-areas: 'text' 'fe' 'be';
   }
 }
 
@@ -34,9 +34,9 @@
   grid-area: text;
   -ms-grid-column-align: center;
       justify-self: center;
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   text-align: center;
   font-family: "Audiowide", cursive;
 }
@@ -53,10 +53,10 @@
   margin-bottom: 0.8em;
 }
 
-.three #web {
+.three #feDiv {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  grid-area: web;
+  grid-area: fe;
   -ms-grid-column-align: center;
       justify-self: center;
   -ms-grid-row-align: self-start;
@@ -64,27 +64,27 @@
   text-align: center;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 4em 12em;
-      grid-template-rows: 4em 12em;
-  -ms-grid-columns: 200px 200px;
-      grid-template-columns: 200px 200px;
-      grid-template-areas: 'head head' 'foto com';
+  -ms-grid-rows: 4em 12em 12em;
+      grid-template-rows: 4em 12em 12em;
+  -ms-grid-columns: 200px 200px 200px;
+      grid-template-columns: 200px 200px 200px;
+      grid-template-areas: 'head head head' 'foto cr1 cr2' 'cr3 cr4 .';
 }
 
 @media screen and (max-width: 480px) {
-  .three #web {
-    -ms-grid-rows: 4em 12em;
-        grid-template-rows: 4em 12em;
-    -ms-grid-columns: 150px 150px;
-        grid-template-columns: 150px 150px;
+  .three #feDiv {
+    -ms-grid-rows: 4em 12em 12em;
+        grid-template-rows: 4em 12em 12em;
+    -ms-grid-columns: 150px 150px 150px;
+        grid-template-columns: 150px 150px 150px;
     margin-top: 3em;
   }
 }
 
-.three #web h2 {
+.three #feDiv h2 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
+  -ms-grid-column-span: 3;
   grid-area: head;
   font-family: "Audiowide", cursive;
   color: #e4f000;
@@ -94,7 +94,7 @@
   margin-bottom: 0.5em;
 }
 
-.three #web #fotoDiv {
+.three #feDiv #fotoDiv {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: foto;
@@ -107,20 +107,161 @@
           flex-direction: column;
 }
 
-.three #web #fotoDiv #aAngular {
+.three #feDiv #fotoDiv #aAngular {
   font-family: "Noto Sans", sans-serif;
   text-decoration: none;
   color: #e4f000;
   margin-bottom: 0.5em;
 }
 
-.three #web #fotoDiv #gitfoto {
+.three #feDiv #fotoDiv #gitfoto {
   margin-top: 0.5em;
 }
 
-.three #web #comDiv {
+.three #feDiv #cr1Div {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
+  grid-area: cr1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.three #feDiv #cr1Div #aCr1 {
+  font-family: "Noto Sans", sans-serif;
+  text-decoration: none;
+  color: #e4f000;
+  margin-bottom: 0.5em;
+}
+
+.three #feDiv #cr1Div #gitcr1 {
+  margin-top: 0.8em;
+}
+
+.three #feDiv #cr2Div {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: cr2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.three #feDiv #cr2Div #aCr2 {
+  font-family: "Noto Sans", sans-serif;
+  text-decoration: none;
+  color: #e4f000;
+  margin-bottom: 0.5em;
+}
+
+.three #feDiv #cr2Div #gitcr2 {
+  margin-top: 0.8em;
+}
+
+.three #feDiv #cr3Div {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: cr3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.three #feDiv #cr3Div #aCr3 {
+  font-family: "Noto Sans", sans-serif;
+  text-decoration: none;
+  color: #e4f000;
+  margin-bottom: 0.5em;
+}
+
+.three #feDiv #cr3Div #gitcr3 {
+  margin-top: 0.8em;
+}
+
+.three #feDiv #cr4Div {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: cr4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.three #feDiv #cr4Div #aCr4 {
+  font-family: "Noto Sans", sans-serif;
+  text-decoration: none;
+  color: #e4f000;
+  margin-bottom: 0.5em;
+}
+
+.three #feDiv #cr4Div #gitcr4 {
+  margin-top: 0.8em;
+}
+
+.three #feDiv a {
+  cursor: url(cursor/tailless_yellow.png), auto !important;
+}
+
+.three #feDiv img {
+  cursor: url(cursor/tailless_grey.png), auto !important;
+}
+
+.three #beDiv {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: be;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-row-align: self-start;
+      align-self: self-start;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 4em 12em 12em;
+      grid-template-rows: 4em 12em 12em;
+  -ms-grid-columns: 200px 200px 200px;
+      grid-template-columns: 200px 200px 200px;
+      grid-template-areas: 'head head head' 'com cr10 cr11' '. cr12 cr13';
+}
+
+@media screen and (max-width: 480px) {
+  .three #beDiv {
+    -ms-grid-rows: 4em 12em 12em;
+        grid-template-rows: 4em 12em 12em;
+    -ms-grid-columns: 150px 150px 150px;
+        grid-template-columns: 150px 150px 150px;
+    margin-top: 3em;
+  }
+}
+
+.three #beDiv h2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: head;
+  font-family: "Audiowide", cursive;
+  color: #e4f000;
+}
+
+.three #beDiv #comDiv {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: com;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -131,66 +272,21 @@
           flex-direction: column;
 }
 
-.three #web #comDiv #aPHP {
+.three #beDiv #comDiv #aPHP {
   font-family: "Noto Sans", sans-serif;
   text-decoration: none;
   color: #e4f000;
   margin-bottom: 0.5em;
 }
 
-.three #web #comDiv #gitcom {
+.three #beDiv #comDiv #gitcom {
   margin-top: 0.8em;
 }
 
-.three #web a {
-  cursor: url(cursor/tailless_yellow.png), auto !important;
-}
-
-.three #web img {
-  cursor: url(cursor/tailless_grey.png), auto !important;
-}
-
-.three #game {
+.three #beDiv #cr10Div {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
-  grid-area: game;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-grid-row-align: self-start;
-      align-self: self-start;
-  text-align: center;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 4em 12em;
-      grid-template-rows: 4em 12em;
-  -ms-grid-columns: 200px 200px;
-      grid-template-columns: 200px 200px;
-      grid-template-areas: 'head head' 'space snake';
-}
-
-@media screen and (max-width: 480px) {
-  .three #game {
-    -ms-grid-rows: 4em 12em;
-        grid-template-rows: 4em 12em;
-    -ms-grid-columns: 150px 150px;
-        grid-template-columns: 150px 150px;
-    margin-top: 3em;
-  }
-}
-
-.three #game h2 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: head;
-  font-family: "Audiowide", cursive;
-  color: #e4f000;
-}
-
-.three #game #space {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: space;
+  grid-area: cr10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -200,22 +296,21 @@
           flex-direction: column;
 }
 
-.three #game #space #aSpace {
+.three #beDiv #cr10Div #acr10 {
   text-decoration: none;
   color: #e4f000;
-  font-family: "Press Start 2P", cursive;
-  font-size: 0.7em;
+  font-family: "Noto Sans", sans-serif;
   margin-bottom: 0.5em;
 }
 
-.three #game #space #gitSpace {
-  margin-top: 0.5em;
+.three #beDiv #cr10Div #gitcr10 {
+  margin-top: 0.8em;
 }
 
-.three #game #snake {
+.three #beDiv #cr11Div {
   -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: snake;
+  -ms-grid-column: 3;
+  grid-area: cr11;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,23 +320,70 @@
           flex-direction: column;
 }
 
-.three #game #snake #aSnake {
+.three #beDiv #cr11Div #acr11 {
   text-decoration: none;
   color: #e4f000;
-  font-family: "Press Start 2P", cursive;
-  font-size: 0.7em;
+  font-family: "Noto Sans", sans-serif;
   margin-bottom: 0.5em;
 }
 
-.three #game #snake #gitSnake {
-  margin-top: 0.5em;
+.three #beDiv #cr11Div #gitcr11 {
+  margin-top: 0.8em;
 }
 
-.three #game a {
+.three #beDiv #cr12Div {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: cr12;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.three #beDiv #cr12Div #acr12 {
+  text-decoration: none;
+  color: #e4f000;
+  font-family: "Noto Sans", sans-serif;
+  margin-bottom: 0.5em;
+}
+
+.three #beDiv #cr12Div #gitcr12 {
+  margin-top: 0.8em;
+}
+
+.three #beDiv #cr13Div {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: cr13;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.three #beDiv #cr13Div #acr13 {
+  text-decoration: none;
+  color: #e4f000;
+  font-family: "Noto Sans", sans-serif;
+  margin-bottom: 0.5em;
+}
+
+.three #beDiv #cr13Div #gitcr13 {
+  margin-top: 0.8em;
+}
+
+.three #beDiv a {
   cursor: url(cursor/tailless_yellow.png), auto !important;
 }
 
-.three #game img {
+.three #beDiv img {
   cursor: url(cursor/tailless_grey.png), auto !important;
 }
 /*# sourceMappingURL=project.css.map */

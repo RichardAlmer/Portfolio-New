@@ -1,0 +1,421 @@
+// styesheet for main in body
+
+@mixin phone
+    @media screen and ( max-width: 480px )
+        @content
+
+@mixin tablet
+    @media screen and ( min-width: 481px ) and ( max-width: 800px )
+        @content
+
+$primery-color: #0E0D0D
+$secondary-color: #C4C4C4
+
+#main
+    display: grid
+    grid-template-rows: 3rem 1fr 3rem 1fr 10rem
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-areas: "p1 p1 p1" "div1 div2 div3" "p2 p2 p2" "div4 div5 div6" "aCoFa aCoFa aCoFa"
+    margin: 5rem
+    @include phone
+        grid-template-rows: 3rem 1fr 1fr 1fr 3rem 1fr 1fr 1fr
+        grid-template-columns: 1fr
+        grid-template-areas: "p1" "div1" "div2" "div3" "p2" "div4" "div5" "div6"
+        margin: 0
+    @include tablet
+        grid-template-rows: 3rem 1fr 1fr 3rem 1fr 1fr 10rem
+        grid-template-columns: 1fr 1fr 
+        grid-template-areas: "p1 p1" "div1 div2" "div3 div3" "p2 p2" "div4 div5" "div6 div6" "aCoFa aCoFa"
+        margin: 0
+
+    #p1
+        grid-area: p1 
+        background-color: $secondary-color
+        padding: 0.5em
+        align-self: center
+        font-size: 1.5em
+        @include phone
+            text-align: center
+        @include tablet
+            text-align: center
+
+    #div1
+        grid-area: div1 
+        justify-self: start
+        align-self: self-start
+        margin: 2rem 0
+        @include phone
+            justify-self: center
+            align-self: center
+            margin: 0
+        @include tablet
+            justify-self: center
+            align-self: center
+            margin: 0
+
+        a
+            background-color: $primery-color
+            padding-bottom: 1em
+
+            #mImg1
+                width: 25vw
+                @include phone
+                    width: 50vw
+                @include tablet
+                    width: 30vw
+            
+        p 
+            width: 25vw
+            background-color: $primery-color
+            color: white
+            justify-self: center
+            align-self: center
+            padding: 1em 0
+            margin-top: 0
+            text-align: center
+            font-size: 1.2em
+            @include phone
+                width: 50vw
+            @include tablet
+                width: 30vw
+        
+    #div2
+        grid-area: div2
+        justify-self: center
+        align-self: self-start
+        margin: 2rem 0
+        @include phone
+            justify-self: center
+            align-self: center
+            margin: 0
+        @include tablet
+            justify-self: center
+            align-self: center
+            margin: 0
+
+        a
+            background-color: $primery-color
+            padding-bottom: 1em
+
+            #mImg2
+                width: 25vw
+                @include phone
+                    width: 50vw
+                @include tablet
+                    width: 30vw
+            
+        p 
+            width: 25vw
+            background-color: $primery-color
+            color: white
+            justify-self: center
+            align-self: center
+            padding: 1em 0
+            margin-top: 0
+            text-align: center
+            font-size: 1.2em
+            @include phone
+                width: 50vw
+            @include tablet
+                width: 30vw
+
+    #div3
+        grid-area: div3 
+        justify-self: end
+        align-self: self-start
+        margin: 2rem 0
+        @include phone
+            justify-self: center
+            align-self: center
+            margin: 0
+        @include tablet
+            justify-self: center
+            align-self: center
+            margin: 0
+
+        a
+            background-color: $primery-color
+            padding-bottom: 1em
+
+            #mImg3
+                width: 25vw
+                @include phone
+                    width: 50vw
+                @include tablet
+                    width: 30vw
+            
+        p 
+            width: 25vw
+            background-color: $primery-color
+            color: white
+            justify-self: center
+            align-self: center
+            padding: 1em 0
+            margin-top: 0
+            text-align: center
+            font-size: 1.2em
+            @include phone
+                width: 50vw
+            @include tablet
+                width: 30vw
+
+    #p2
+        grid-area: p2 
+        background-color: $secondary-color
+        padding: 0.5em
+        align-self: center
+        font-size: 1.5em
+        @include phone
+            text-align: center
+            margin-bottom: 3rem
+        @include tablet
+            text-align: center
+            margin-bottom: 3rem
+
+    #div4
+        grid-area: div4 
+        justify-self: start
+        align-self: self-start
+        margin: 2rem 0
+        @include phone
+            justify-self: center
+            align-self: center
+            margin: 0
+        @include tablet
+            justify-self: center
+            align-self: center
+            margin: 0
+
+        a
+            background-color: $primery-color
+            padding-bottom: 1em
+
+            #mImg4
+                width: 25vw
+                @include phone
+                    width: 50vw
+                @include tablet
+                    width: 30vw
+            
+        p 
+            width: 25vw
+            background-color: $primery-color
+            color: white
+            justify-self: center
+            align-self: center
+            padding: 1em 0
+            margin-top: 0
+            text-align: center
+            font-size: 1.2em
+            @include phone
+                width: 50vw
+            @include tablet
+                width: 30vw
+        
+    #div5
+        grid-area: div5
+        justify-self: center
+        align-self: self-start
+        margin: 2rem 0
+        @include phone
+            justify-self: center
+            align-self: center
+            margin: 0
+        @include tablet
+            justify-self: center
+            align-self: center
+            margin: 0
+
+        a
+            background-color: $primery-color
+            padding-bottom: 1em
+
+            #mImg5
+                width: 25vw
+                @include phone
+                    width: 50vw
+                @include tablet
+                    width: 30vw
+            
+        p 
+            width: 25vw
+            background-color: $primery-color
+            color: white
+            justify-self: center
+            align-self: center
+            padding: 1em 0
+            margin-top: 0
+            text-align: center
+            font-size: 1.2em 
+            @include phone
+                width: 50vw
+            @include tablet
+                width: 30vw
+
+    #div6
+        grid-area: div6
+        justify-self: end
+        align-self: self-start
+        margin: 2rem 0
+        @include phone
+            justify-self: center
+            align-self: center
+            margin: 0
+        @include tablet
+            justify-self: center
+            align-self: center
+            margin: 0
+
+        a
+            background-color: $primery-color
+            padding-bottom: 1em
+
+            #mImg6
+                width: 25vw
+                @include phone
+                    width: 50vw
+                @include tablet
+                    width: 30vw
+            
+        p 
+            width: 25vw
+            background-color: $primery-color
+            color: white
+            justify-self: center
+            align-self: center
+            padding: 1em 0
+            margin-top: 0
+            text-align: center
+            font-size: 1.2em
+            @include phone
+                width: 50vw
+            @include tablet
+                width: 30vw
+    
+    #aCoFa
+        grid-area: aCoFa
+        justify-self: center
+        align-self: center
+        @include phone
+            display: none
+
+        img
+            width: 80vw
+        
+#main2
+    display: grid
+    grid-template-rows: 1fr 1fr
+    grid-template-columns: 1fr 1fr
+    grid-template-areas: "div7 div8" "div9 div10"
+    @include phone
+        grid-template-rows: 1fr 1fr 1fr 1fr
+        grid-template-columns: 1fr 
+        grid-template-areas: "div7" "div8" "div9" "div10"
+    
+    #div7
+        grid-area: div7
+        justify-self: center
+        align-self: center
+
+        a
+            background-color: $primery-color
+            padding-bottom: 1em
+
+            #mImg7
+                width: 30vw
+                @include phone
+                    width: 50vw
+            
+        p 
+            width: 30vw
+            background-color: $primery-color
+            color: white
+            justify-self: center
+            align-self: center
+            padding: 1em 0
+            margin-top: 0
+            text-align: center
+            font-size: 1.2em
+            @include phone
+                    width: 50vw
+        
+    #div8
+        grid-area: div8
+        justify-self: center
+        align-self: center
+
+        a
+            background-color: $primery-color
+            padding-bottom: 1em
+
+            #mImg8
+                width: 30vw
+                @include phone
+                    width: 50vw
+            
+        p 
+            width: 30vw
+            background-color: $primery-color
+            color: white
+            justify-self: center
+            align-self: center
+            padding: 1em 0
+            margin-top: 0
+            text-align: center
+            font-size: 1.2em 
+            @include phone
+                    width: 50vw
+
+    #div9
+        grid-area: div9
+        justify-self: center
+        align-self: center
+
+        a
+            background-color: $primery-color
+            padding-bottom: 1em
+
+            #mImg9
+                width: 30vw
+                @include phone
+                    width: 50vw
+            
+        p 
+            width: 30vw
+            background-color: $primery-color
+            color: white
+            justify-self: center
+            align-self: center
+            padding: 1em 0
+            margin-top: 0
+            text-align: center
+            font-size: 1.2em
+            @include phone
+                    width: 50vw
+
+    #div10
+        grid-area: div10
+        justify-self: center
+        align-self: center
+
+        a
+            background-color: $primery-color
+            padding-bottom: 1em
+
+            #mImg10
+                width: 30vw
+                @include phone
+                    width: 50vw
+            
+        p 
+            width: 30vw
+            background-color: $primery-color
+            color: white
+            justify-self: center
+            align-self: center
+            padding: 1em 0
+            margin-top: 0
+            text-align: center
+            font-size: 1.2em
+            @include phone
+                    width: 50vw

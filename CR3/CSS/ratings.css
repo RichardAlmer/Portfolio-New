@@ -1,0 +1,167 @@
+/* Stylesheet for Ratings */
+/* colors and font-families */
+/* Media Queries */
+/* Stylesheet for the Cards */
+/* colors and font-families */
+.myCard {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 25em;
+  background-color: #cecece;
+  border-radius: 2rem;
+  -webkit-box-shadow: 3px 3px 5px white;
+          box-shadow: 3px 3px 5px white;
+}
+
+.myCard .cardImg {
+  width: 100%;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.myCard .myCardBody {
+  width: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 4rem 7rem 3rem;
+      grid-template-rows: 4rem 7rem 3rem;
+}
+
+.myCard .myCardBody h5 {
+  text-align: center;
+  font-size: 1.7rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0 0.5rem;
+}
+
+.myCard .myCardBody p {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1.2rem;
+  padding: 0 0.5rem;
+}
+
+.myCard .myCardBody b {
+  font-size: 1.2rem;
+}
+
+.myCard .myCardBody .price {
+  font-weight: bold;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  padding-bottom: 0.5rem;
+}
+
+.myCard .myCardBodyB {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 4rem 3rem 7rem;
+      grid-template-rows: 4rem 3rem 7rem;
+}
+
+.myCard .myCardBodyB h5 {
+  text-align: center;
+  font-size: 1.7rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0 0.5rem;
+}
+
+.myCard .myCardBodyB p {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1.2rem;
+  padding: 0 0.5rem;
+}
+
+.myCard .myCardBodyB b {
+  font-size: 1.2rem;
+}
+
+.myCard .myCardBodyB .priceB {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  padding-bottom: 0.5rem;
+}
+
+#main {
+  background-color: #6e6e6e;
+  padding: 0 5vw;
+}
+
+#main h1 {
+  font-size: 4rem;
+  font-family: "Lobster", cursive, arial, helvetica, sans-serif;
+  text-align: center;
+  margin: 2rem 0;
+  padding-bottom: 3rem;
+}
+
+#main .rating {
+  text-align: center;
+  margin: 2rem 0;
+  border-top: 1px solid black;
+  padding-top: 2rem;
+}
+
+#main .name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#main .stars {
+  color: gold;
+  font-size: 2rem;
+}
+
+#main .text {
+  font-size: 1.2rem;
+  padding-top: 1rem;
+}
+
+#main #newRating {
+  text-align: center;
+  margin: 2rem 0;
+  border-top: 1px solid black;
+  padding-top: 4rem;
+}
+
+#main #please {
+  font-size: 1.5rem;
+  font-family: "Lobster", cursive, arial, helvetica, sans-serif;
+  padding-bottom: 1rem;
+}
+
+#main #newStars {
+  color: gold;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+#main #newName {
+  margin-bottom: 0.5rem;
+}
+
+#main #newText {
+  width: 50vw;
+}
+
+#main #button {
+  width: 4rem;
+  margin-top: 0.5rem;
+  margin-bottom: 4rem;
+}
+/*# sourceMappingURL=ratings.css.map */

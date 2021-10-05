@@ -1,0 +1,14 @@
+#main {
+  text-align: center;
+}
+
+#main h1 {
+  font-size: 3em;
+  color: blue;
+}
+
+#main iframe {
+  margin: 2em;
+  width: 70vw;
+}
+/*# sourceMappingURL=video.css.map */

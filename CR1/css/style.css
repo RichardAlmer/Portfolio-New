@@ -1,0 +1,71 @@
+
+/* Stylesheet for Header, Nav-Bar, Footer */
+
+/* Header */
+
+header {
+    background-color: rgb(189, 189, 189);
+}
+
+#divH {
+    padding: 75px 10px 75px 10px;
+}
+
+#headerLogo {
+    width: 320px;
+    position: absolute;
+    right: 50px;
+    top: 35px;
+}
+
+#headerP {
+    position: absolute;
+    left: 100px;
+    top: 60px;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;   
+}
+
+/* Nav-Bar */
+
+nav {
+    background-color: rgb(171, 65, 65)
+}
+
+#nav-ul {
+    text-align: right;
+    padding: 15px;
+}
+
+.nav-li {
+    display: inline;
+    margin: 5px;  
+    padding-right: 5px;  
+}
+#con_li {
+    padding-right: 75px;
+}
+
+.nav-a {
+    color: rgb(189, 189, 189);
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/* Footer */
+
+footer {
+    float: left;
+    width: 100%;
+    background-color: rgb(166, 167, 166);
+    text-align: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+#footerLogo {
+    width: 250px;
+}

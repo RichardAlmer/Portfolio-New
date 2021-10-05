@@ -1,0 +1,57 @@
+@import utility
+@import mQ
+
+*
+    cursor: $yellow-cursor
+    background-color: black
+    font-family: $game-font
+    color: $color-three
+
+#container
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 0.6fr 1fr 0.4fr
+    grid-template-areas: 'head head' 'snake space' 'back back'
+
+    h1
+        grid-area: head
+        justify-self: center
+        align-self: center
+        font-size: 3em
+
+    #space
+        grid-area: space
+        display: flex
+        flex-direction: column
+        justify-self: center
+        text-align: center
+
+        #aSpace
+            margin-bottom: 2em
+            text-decoration: none
+
+        #gitSpace
+            margin-top: 2em
+
+    #snake
+        grid-area: snake
+        display: flex
+        flex-direction: column
+        justify-self: center
+        text-align: center
+
+        #aSnake
+            margin-bottom: 2em
+            text-decoration: none
+
+        #gitSnake
+            margin-top: 2em
+
+    a
+        grid-area: back
+        justify-self: center
+        align-self: center
+        cursor: $black-cursor
+
+    img
+        cursor: $black-cursor

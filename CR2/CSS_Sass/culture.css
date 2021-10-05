@@ -1,0 +1,22 @@
+#main {
+  text-align: center;
+}
+
+#main h1 {
+  font-size: 3em;
+  color: red;
+}
+
+#main h2 {
+  font-size: 2em;
+}
+
+#main #text {
+  width: 70vw;
+  border: 5px solid blue;
+}
+
+#main button {
+  margin-top: 2em;
+}
+/*# sourceMappingURL=culture.css.map */

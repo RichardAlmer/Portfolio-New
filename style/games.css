@@ -1,0 +1,99 @@
+/*------------------Fonts----------------*/
+/*------------------Colors----------------*/
+/*------------------Cursor----------------*/
+/* Media Queries */
+* {
+  cursor: url(cursor/tailless_yellow.png), auto !important;
+  background-color: black;
+  font-family: "Press Start 2P", cursive;
+  color: #e4f000;
+}
+
+#container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 0.6fr 1fr 0.4fr;
+      grid-template-rows: 0.6fr 1fr 0.4fr;
+      grid-template-areas: 'head head' 'snake space' 'back back';
+}
+
+#container h1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: head;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 3em;
+}
+
+#container #space {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: space;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-self: center;
+  text-align: center;
+}
+
+#container #space #aSpace {
+  margin-bottom: 2em;
+  text-decoration: none;
+}
+
+#container #space #gitSpace {
+  margin-top: 2em;
+}
+
+#container #snake {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: snake;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-self: center;
+  text-align: center;
+}
+
+#container #snake #aSnake {
+  margin-bottom: 2em;
+  text-decoration: none;
+}
+
+#container #snake #gitSnake {
+  margin-top: 2em;
+}
+
+#container a {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: back;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  cursor: url(cursor/tailless_grey.png), auto !important;
+}
+
+#container img {
+  cursor: url(cursor/tailless_grey.png), auto !important;
+}
+/*# sourceMappingURL=games.css.map */

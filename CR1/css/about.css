@@ -1,0 +1,12 @@
+
+/* Stylesheet for Main in Auout */
+
+#about-main {
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    margin: auto;
+    padding-left: 300px;
+}

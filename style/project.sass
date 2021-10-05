@@ -5,22 +5,22 @@
 
 .three
     width: 100vw
-    height: 100vh
+    height: auto
     cursor: $yellow-cursor
     display: grid
     grid-template-rows: 0.9fr 1fr
     grid-template-columns: 1fr 1fr
-    grid-template-areas: 'text text' 'web game'
+    grid-template-areas: 'text text' 'fe be'
     @include tablet
         height: auto
         grid-template-rows: 1fr 1fr 1fr
         grid-template-columns: 1fr
-        grid-template-areas: 'text' 'web' 'game'
+        grid-template-areas: 'text' 'fe' 'be'
     
     #ptext
         grid-area: text
         justify-self: center
-        align-self: end
+        align-self: center
         text-align: center
         font-family: $h-font
 
@@ -34,18 +34,18 @@
             font-size: 1.2em
             margin-bottom: 0.8em
 
-    #web
-        grid-area: web
+    #feDiv
+        grid-area: fe
         justify-self: center
         align-self: self-start
         text-align: center
         display: grid
-        grid-template-rows: 4em 12em
-        grid-template-columns: 200px 200px
-        grid-template-areas: 'head head' 'foto com'
+        grid-template-rows: 4em 12em 12em
+        grid-template-columns: 200px 200px 200px
+        grid-template-areas: 'head head head' 'foto cr1 cr2' 'cr3 cr4 .'
         @include phone
-            grid-template-rows: 4em 12em
-            grid-template-columns: 150px 150px
+            grid-template-rows: 4em 12em 12em
+            grid-template-columns: 150px 150px 150px
             margin-top: 3em
 
         h2
@@ -70,6 +70,87 @@
             #gitfoto
                 margin-top: 0.5em
 
+        #cr1Div
+            grid-area: cr1
+            display: flex
+            flex-direction: column
+
+            #aCr1
+                font-family: $cont-font
+                text-decoration: none
+                color: $color-three
+                margin-bottom: 0.5em
+
+            #gitcr1
+                margin-top: 0.8em
+
+        #cr2Div
+            grid-area: cr2
+            display: flex
+            flex-direction: column
+
+            #aCr2
+                font-family: $cont-font
+                text-decoration: none
+                color: $color-three
+                margin-bottom: 0.5em
+
+            #gitcr2
+                margin-top: 0.8em
+
+        #cr3Div
+            grid-area: cr3
+            display: flex
+            flex-direction: column
+
+            #aCr3
+                font-family: $cont-font
+                text-decoration: none
+                color: $color-three
+                margin-bottom: 0.5em
+
+            #gitcr3
+                margin-top: 0.8em
+
+        #cr4Div
+            grid-area: cr4
+            display: flex
+            flex-direction: column
+
+            #aCr4
+                font-family: $cont-font
+                text-decoration: none
+                color: $color-three
+                margin-bottom: 0.5em
+
+            #gitcr4
+                margin-top: 0.8em
+            
+        a
+            cursor: $yellow-cursor
+
+        img
+            cursor: $black-cursor
+
+    #beDiv
+        grid-area: be
+        justify-self: center
+        align-self: self-start
+        text-align: center
+        display: grid
+        grid-template-rows: 4em 12em 12em
+        grid-template-columns: 200px 200px 200px
+        grid-template-areas: 'head head head' 'com cr10 cr11' '. cr12 cr13'
+        @include phone
+            grid-template-rows: 4em 12em 12em
+            grid-template-columns: 150px 150px 150px
+            margin-top: 3em
+
+        h2
+            grid-area: head
+            font-family: $h-font
+            color: $color-three
+
         #comDiv
             grid-area: com
             display: flex
@@ -83,61 +164,62 @@
 
             #gitcom
                 margin-top: 0.8em
-            
-        a
-            cursor: $yellow-cursor
 
-        img
-            cursor: $black-cursor
-
-    #game
-        grid-area: game
-        justify-self: center
-        align-self: self-start
-        text-align: center
-        display: grid
-        grid-template-rows: 4em 12em
-        grid-template-columns: 200px 200px
-        grid-template-areas: 'head head' 'space snake'
-        @include phone
-            grid-template-rows: 4em 12em
-            grid-template-columns: 150px 150px
-            margin-top: 3em
-
-        h2
-            grid-area: head
-            font-family: $h-font
-            color: $color-three
-
-        #space
-            grid-area: space
+        #cr10Div
+            grid-area: cr10
             display: flex
             flex-direction: column
 
-            #aSpace
+            #acr10
                 text-decoration: none
                 color: $color-three
-                font-family: $game-font
-                font-size: 0.7em
+                font-family: $cont-font
                 margin-bottom: 0.5em
-            
-            #gitSpace
-                margin-top: 0.5em
 
-        #snake
-            grid-area: snake
+            #gitcr10
+                margin-top: 0.8em
+
+        #cr11Div
+            grid-area: cr11
             display: flex
             flex-direction: column
 
-            #aSnake
+            #acr11
                 text-decoration: none
                 color: $color-three
-                font-family: $game-font
-                font-size: 0.7em
+                font-family: $cont-font
                 margin-bottom: 0.5em
 
-            #gitSnake
-                margin-top: 0.5em
+            #gitcr11
+                margin-top: 0.8em
+
+        #cr12Div
+            grid-area: cr12
+            display: flex
+            flex-direction: column
+
+            #acr12
+                text-decoration: none
+                color: $color-three
+                font-family: $cont-font
+                margin-bottom: 0.5em
+
+            #gitcr12
+                margin-top: 0.8em
+
+        #cr13Div
+            grid-area: cr13
+            display: flex
+            flex-direction: column
+
+            #acr13
+                text-decoration: none
+                color: $color-three
+                font-family: $cont-font
+                margin-bottom: 0.5em
+
+            #gitcr13
+                margin-top: 0.8em
 
         a
             cursor: $yellow-cursor

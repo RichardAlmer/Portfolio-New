@@ -1,0 +1,807 @@
+#main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 3rem 1fr 3rem 1fr 10rem;
+      grid-template-rows: 3rem 1fr 3rem 1fr 10rem;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas: "p1 p1 p1" "div1 div2 div3" "p2 p2 p2" "div4 div5 div6" "aCoFa aCoFa aCoFa";
+  margin: 5rem;
+}
+
+@media screen and (max-width: 480px) {
+  #main {
+    -ms-grid-rows: 3rem 1fr 1fr 1fr 3rem 1fr 1fr 1fr;
+        grid-template-rows: 3rem 1fr 1fr 1fr 3rem 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "p1" "div1" "div2" "div3" "p2" "div4" "div5" "div6";
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  #main {
+    -ms-grid-rows: 3rem 1fr 1fr 3rem 1fr 1fr 10rem;
+        grid-template-rows: 3rem 1fr 1fr 3rem 1fr 1fr 10rem;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "p1 p1" "div1 div2" "div3 div3" "p2 p2" "div4 div5" "div6 div6" "aCoFa aCoFa";
+    margin: 0;
+  }
+}
+
+#main #p1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: p1;
+  background-color: #C4C4C4;
+  padding: 0.5em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 480px) {
+  #main #p1 {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  #main #p1 {
+    text-align: center;
+  }
+}
+
+#main #div1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: div1;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  -ms-flex-item-align: self-start;
+      -ms-grid-row-align: self-start;
+      align-self: self-start;
+  margin: 2rem 0;
+}
+
+@media screen and (max-width: 480px) {
+  #main #div1 {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  #main #div1 {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0;
+  }
+}
+
+#main #div1 a {
+  background-color: #0E0D0D;
+  padding-bottom: 1em;
+}
+
+#main #div1 a #mImg1 {
+  width: 25vw;
+}
+
+@media screen and (max-width: 480px) {
+  #main #div1 a #mImg1 {
+    width: 50vw;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  #main #div1 a #mImg1 {
+    width: 30vw;
+  }
+}
+
+#main #div1 p {
+  width: 25vw;
+  background-color: #0E0D0D;
+  color: white;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 1em 0;
+  margin-top: 0;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 480px) {
+  #main #div1 p {
+    width: 50vw;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  #main #div1 p {
+    width: 30vw;
+  }
+}
+
+#main #div2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: div2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: self-start;
+      -ms-grid-row-align: self-start;
+      align-self: self-start;
+  margin: 2rem 0;
+}
+
+@media screen and (max-width: 480px) {
+  #main #div2 {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  #main #div2 {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0;
+  }
+}
+
+#main #div2 a {
+  background-color: #0E0D0D;
+  padding-bottom: 1em;
+}
+
+#main #div2 a #mImg2 {
+  width: 25vw;
+}
+
+@media screen and (max-width: 480px) {
+  #main #div2 a #mImg2 {
+    width: 50vw;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  #main #div2 a #mImg2 {
+    width: 30vw;
+  }
+}
+
+#main #div2 p {
+  width: 25vw;
+  background-color: #0E0D0D;
+  color: white;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 1em 0;
+  margin-top: 0;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 480px) {
+  #main #div2 p {
+    width: 50vw;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  #main #div2 p {
+    width: 30vw;
+  }
+}
+
+#main #div3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: div3;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-flex-item-align: self-start;
+      -ms-grid-row-align: self-start;
+      align-self: self-start;
+  margin: 2rem 0;
+}
+
+@media screen and (max-width: 480px) {
+  #main #div3 {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  #main #div3 {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0;
+  }
+}
+
+#main #div3 a {
+  background-color: #0E0D0D;
+  padding-bottom: 1em;
+}
+
+#main #div3 a #mImg3 {
+  width: 25vw;
+}
+
+@media screen and (max-width: 480px) {
+  #main #div3 a #mImg3 {
+    width: 50vw;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  #main #div3 a #mImg3 {
+    width: 30vw;
+  }
+}
+
+#main #div3 p {
+  width: 25vw;
+  background-color: #0E0D0D;
+  color: white;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 1em 0;
+  margin-top: 0;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 480px) {
+  #main #div3 p {
+    width: 50vw;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  #main #div3 p {
+    width: 30vw;
+  }
+}
+
+#main #p2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: p2;
+  background-color: #C4C4C4;
+  padding: 0.5em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 480px) {
+  #main #p2 {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  #main #p2 {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+}
+
+#main #div4 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: div4;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  -ms-flex-item-align: self-start;
+      -ms-grid-row-align: self-start;
+      align-self: self-start;
+  margin: 2rem 0;
+}
+
+@media screen and (max-width: 480px) {
+  #main #div4 {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  #main #div4 {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0;
+  }
+}
+
+#main #div4 a {
+  background-color: #0E0D0D;
+  padding-bottom: 1em;
+}
+
+#main #div4 a #mImg4 {
+  width: 25vw;
+}
+
+@media screen and (max-width: 480px) {
+  #main #div4 a #mImg4 {
+    width: 50vw;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  #main #div4 a #mImg4 {
+    width: 30vw;
+  }
+}
+
+#main #div4 p {
+  width: 25vw;
+  background-color: #0E0D0D;
+  color: white;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 1em 0;
+  margin-top: 0;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 480px) {
+  #main #div4 p {
+    width: 50vw;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  #main #div4 p {
+    width: 30vw;
+  }
+}
+
+#main #div5 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: div5;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: self-start;
+      -ms-grid-row-align: self-start;
+      align-self: self-start;
+  margin: 2rem 0;
+}
+
+@media screen and (max-width: 480px) {
+  #main #div5 {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  #main #div5 {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0;
+  }
+}
+
+#main #div5 a {
+  background-color: #0E0D0D;
+  padding-bottom: 1em;
+}
+
+#main #div5 a #mImg5 {
+  width: 25vw;
+}
+
+@media screen and (max-width: 480px) {
+  #main #div5 a #mImg5 {
+    width: 50vw;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  #main #div5 a #mImg5 {
+    width: 30vw;
+  }
+}
+
+#main #div5 p {
+  width: 25vw;
+  background-color: #0E0D0D;
+  color: white;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 1em 0;
+  margin-top: 0;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 480px) {
+  #main #div5 p {
+    width: 50vw;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  #main #div5 p {
+    width: 30vw;
+  }
+}
+
+#main #div6 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: div6;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-flex-item-align: self-start;
+      -ms-grid-row-align: self-start;
+      align-self: self-start;
+  margin: 2rem 0;
+}
+
+@media screen and (max-width: 480px) {
+  #main #div6 {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  #main #div6 {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0;
+  }
+}
+
+#main #div6 a {
+  background-color: #0E0D0D;
+  padding-bottom: 1em;
+}
+
+#main #div6 a #mImg6 {
+  width: 25vw;
+}
+
+@media screen and (max-width: 480px) {
+  #main #div6 a #mImg6 {
+    width: 50vw;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  #main #div6 a #mImg6 {
+    width: 30vw;
+  }
+}
+
+#main #div6 p {
+  width: 25vw;
+  background-color: #0E0D0D;
+  color: white;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 1em 0;
+  margin-top: 0;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 480px) {
+  #main #div6 p {
+    width: 50vw;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  #main #div6 p {
+    width: 30vw;
+  }
+}
+
+#main #aCoFa {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: aCoFa;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media screen and (max-width: 480px) {
+  #main #aCoFa {
+    display: none;
+  }
+}
+
+#main #aCoFa img {
+  width: 80vw;
+}
+
+#main2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "div7 div8" "div9 div10";
+}
+
+@media screen and (max-width: 480px) {
+  #main2 {
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "div7" "div8" "div9" "div10";
+  }
+}
+
+#main2 #div7 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: div7;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#main2 #div7 a {
+  background-color: #0E0D0D;
+  padding-bottom: 1em;
+}
+
+#main2 #div7 a #mImg7 {
+  width: 30vw;
+}
+
+@media screen and (max-width: 480px) {
+  #main2 #div7 a #mImg7 {
+    width: 50vw;
+  }
+}
+
+#main2 #div7 p {
+  width: 30vw;
+  background-color: #0E0D0D;
+  color: white;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 1em 0;
+  margin-top: 0;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 480px) {
+  #main2 #div7 p {
+    width: 50vw;
+  }
+}
+
+#main2 #div8 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: div8;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#main2 #div8 a {
+  background-color: #0E0D0D;
+  padding-bottom: 1em;
+}
+
+#main2 #div8 a #mImg8 {
+  width: 30vw;
+}
+
+@media screen and (max-width: 480px) {
+  #main2 #div8 a #mImg8 {
+    width: 50vw;
+  }
+}
+
+#main2 #div8 p {
+  width: 30vw;
+  background-color: #0E0D0D;
+  color: white;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 1em 0;
+  margin-top: 0;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 480px) {
+  #main2 #div8 p {
+    width: 50vw;
+  }
+}
+
+#main2 #div9 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: div9;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#main2 #div9 a {
+  background-color: #0E0D0D;
+  padding-bottom: 1em;
+}
+
+#main2 #div9 a #mImg9 {
+  width: 30vw;
+}
+
+@media screen and (max-width: 480px) {
+  #main2 #div9 a #mImg9 {
+    width: 50vw;
+  }
+}
+
+#main2 #div9 p {
+  width: 30vw;
+  background-color: #0E0D0D;
+  color: white;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 1em 0;
+  margin-top: 0;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 480px) {
+  #main2 #div9 p {
+    width: 50vw;
+  }
+}
+
+#main2 #div10 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: div10;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#main2 #div10 a {
+  background-color: #0E0D0D;
+  padding-bottom: 1em;
+}
+
+#main2 #div10 a #mImg10 {
+  width: 30vw;
+}
+
+@media screen and (max-width: 480px) {
+  #main2 #div10 a #mImg10 {
+    width: 50vw;
+  }
+}
+
+#main2 #div10 p {
+  width: 30vw;
+  background-color: #0E0D0D;
+  color: white;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 1em 0;
+  margin-top: 0;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 480px) {
+  #main2 #div10 p {
+    width: 50vw;
+  }
+}
+/*# sourceMappingURL=mainHome.css.map */

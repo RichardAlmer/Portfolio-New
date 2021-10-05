@@ -1,0 +1,250 @@
+/* Stylesheet for Menu */
+/* colors and font-families */
+/* Media Queries */
+/* Stylesheet for the Cards */
+/* colors and font-families */
+.myCard {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 25em;
+  background-color: #cecece;
+  border-radius: 2rem;
+  -webkit-box-shadow: 3px 3px 5px white;
+          box-shadow: 3px 3px 5px white;
+}
+
+.myCard .cardImg {
+  width: 100%;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.myCard .myCardBody {
+  width: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 4rem 7rem 3rem;
+      grid-template-rows: 4rem 7rem 3rem;
+}
+
+.myCard .myCardBody h5 {
+  text-align: center;
+  font-size: 1.7rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0 0.5rem;
+}
+
+.myCard .myCardBody p {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1.2rem;
+  padding: 0 0.5rem;
+}
+
+.myCard .myCardBody b {
+  font-size: 1.2rem;
+}
+
+.myCard .myCardBody .price {
+  font-weight: bold;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  padding-bottom: 0.5rem;
+}
+
+.myCard .myCardBodyB {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 4rem 3rem 7rem;
+      grid-template-rows: 4rem 3rem 7rem;
+}
+
+.myCard .myCardBodyB h5 {
+  text-align: center;
+  font-size: 1.7rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0 0.5rem;
+}
+
+.myCard .myCardBodyB p {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1.2rem;
+  padding: 0 0.5rem;
+}
+
+.myCard .myCardBodyB b {
+  font-size: 1.2rem;
+}
+
+.myCard .myCardBodyB .priceB {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  padding-bottom: 0.5rem;
+}
+
+#main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 15rem 6rem 45rem 6rem 85rem 6rem 45rem 6rem 45rem;
+      grid-template-rows: 15rem 6rem 45rem 6rem 85rem 6rem 45rem 6rem 45rem;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: "menu" "starters" "starterDiv" "MC" "MCDiv" "desserts" "dessertDiv" "beverages" "bevDiv";
+  background-color: #6e6e6e;
+  padding: 0 5vw;
+}
+
+@media screen and (min-width: 555px) and (max-width: 1110px) {
+  #main {
+    -ms-grid-rows: 15rem 6rem 90rem 6rem 170rem 6rem 90rem 6rem 90rem;
+        grid-template-rows: 15rem 6rem 90rem 6rem 170rem 6rem 90rem 6rem 90rem;
+  }
+}
+
+@media screen and (max-width: 554px) {
+  #main {
+    -ms-grid-rows: 15rem 6rem 180rem 6rem 340rem 6rem 180rem 6rem 180rem;
+        grid-template-rows: 15rem 6rem 180rem 6rem 340rem 6rem 180rem 6rem 180rem;
+  }
+}
+
+#main #menu {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: menu;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: "Lobster", cursive, arial, helvetica, sans-serif;
+  font-size: 4rem;
+  text-shadow: 3px 3px 5px #c4c4c4;
+}
+
+#main #starters {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: starters;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: self-start;
+      -ms-grid-row-align: self-start;
+      align-self: self-start;
+  font-family: "Lobster", cursive, arial, helvetica, sans-serif;
+  font-size: 3rem;
+  text-shadow: 3px 3px 5px #c4c4c4;
+}
+
+#main #starterDiv {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: starterDiv;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#main #MC {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: MC;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: self-start;
+      -ms-grid-row-align: self-start;
+      align-self: self-start;
+  font-family: "Lobster", cursive, arial, helvetica, sans-serif;
+  font-size: 3rem;
+  text-shadow: 3px 3px 5px #c4c4c4;
+  padding-top: 1rem;
+}
+
+#main #MCDiv {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: MCDiv;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#main #desserts {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: desserts;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: self-start;
+      -ms-grid-row-align: self-start;
+      align-self: self-start;
+  font-family: "Lobster", cursive, arial, helvetica, sans-serif;
+  font-size: 3rem;
+  text-shadow: 3px 3px 5px #c4c4c4;
+  padding-top: 1rem;
+}
+
+#main #dessertDiv {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: dessertDiv;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#main #beverages {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  grid-area: beverages;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: self-start;
+      -ms-grid-row-align: self-start;
+      align-self: self-start;
+  font-family: "Lobster", cursive, arial, helvetica, sans-serif;
+  font-size: 3rem;
+  text-shadow: 3px 3px 5px #c4c4c4;
+  padding-top: 1rem;
+}
+
+#main #bevDiv {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  grid-area: bevDiv;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+/*# sourceMappingURL=mainMenu.css.map */
