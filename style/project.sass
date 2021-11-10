@@ -11,13 +11,12 @@
     grid-template-rows: 0.9fr 1fr
     grid-template-columns: 1fr 1fr
     grid-template-areas: 'text text' 'fe be'
-    @include tablet
-        height: auto
-        grid-template-rows: 1fr 1fr 1fr
+    @include smallScreen
+        grid-template-rows: 0.5fr 1fr 1fr
         grid-template-columns: 1fr
         grid-template-areas: 'text' 'fe' 'be'
-    @include phone
-        grid-template-rows: 0.5fr 1fr 1fr
+    @include tablet
+        height: auto
     
     #ptext
         grid-area: text
@@ -46,11 +45,6 @@
         grid-template-columns: 200px 200px 200px
         grid-template-areas: 'head head head' 'foto cr1 cr2' 'cr3 cr4 .'
         @include tablet
-            grid-template-rows: 4em 12em 12em 12em
-            grid-template-columns: 150px 150px
-            grid-template-areas: 'head head' 'foto cr1' 'cr2 cr3' 'cr4 cr4'
-            margin-top: 3em
-        @include phone
             grid-template-rows: 4em 12em 12em 12em
             grid-template-columns: 150px 150px
             grid-template-areas: 'head head' 'foto cr1' 'cr2 cr3' 'cr4 cr4'
@@ -150,11 +144,6 @@
         grid-template-columns: 200px 200px 200px
         grid-template-areas: 'head head head' 'com cr10 cr11' '. cr12 cr13'
         @include tablet
-            grid-template-rows: 4em 12em 12em 12em
-            grid-template-columns: 150px 150px
-            grid-template-areas: 'head head' 'com cr10' 'cr11 cr12' 'cr13 cr13'
-            margin-top: 3em
-        @include phone
             grid-template-rows: 4em 12em 12em 12em
             grid-template-columns: 150px 150px
             grid-template-areas: 'head head' 'com cr10' 'cr11 cr12' 'cr13 cr13'

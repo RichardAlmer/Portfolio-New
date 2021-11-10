@@ -17,7 +17,7 @@ body {
   overflow-y: hidden;
 }
 
-@media screen and (min-width: 801px) and (max-width: 1020px) {
+@media screen and (max-width: 1020px) {
   body {
     overflow-y: auto;
   }
@@ -36,7 +36,7 @@ body #container {
       grid-template-areas: 'head head head' 'control game instract' 'back back back';
 }
 
-@media screen and (min-width: 801px) and (max-width: 1020px) {
+@media screen and (max-width: 1020px) {
   body #container {
     -ms-grid-rows: 5em 1fr 5em 10em 17em;
         grid-template-rows: 5em 1fr 5em 10em 17em;
