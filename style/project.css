@@ -16,7 +16,7 @@
       grid-template-areas: 'text text' 'fe be';
 }
 
-@media screen and (max-width: 1020px) and (orientation: landscape) {
+@media screen and (max-width: 1020px) {
   .three {
     -ms-grid-rows: 0.5fr 1fr 1fr;
         grid-template-rows: 0.5fr 1fr 1fr;
@@ -26,7 +26,7 @@
   }
 }
 
-@media screen and (max-width: 800px) and (orientation: landscape) {
+@media screen and (max-width: 800px) {
   .three {
     height: auto;
   }
@@ -76,7 +76,13 @@
       grid-template-areas: 'head head head' 'foto cr1 cr2' 'cr3 cr4 .';
 }
 
-@media screen and (max-width: 800px) and (orientation: landscape) {
+@media screen and (max-width: 1020px) {
+  .three #feDiv {
+        grid-template-areas: 'head head head' 'foto cr1 cr2' 'cr3 . cr4';
+  }
+}
+
+@media screen and (max-width: 800px) {
   .three #feDiv {
     -ms-grid-rows: 4em 12em 12em 12em;
         grid-template-rows: 4em 12em 12em 12em;
@@ -246,7 +252,13 @@
       grid-template-areas: 'head head head' 'com cr10 cr11' '. cr12 cr13';
 }
 
-@media screen and (max-width: 800px) and (orientation: landscape) {
+@media screen and (max-width: 1020px) {
+  .three #beDiv {
+        grid-template-areas: 'head head head' 'com cr10 cr11' 'cr12 . cr13';
+  }
+}
+
+@media screen and (max-width: 800px) {
   .three #beDiv {
     -ms-grid-rows: 4em 12em 12em 12em;
         grid-template-rows: 4em 12em 12em 12em;

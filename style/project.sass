@@ -44,6 +44,8 @@
         grid-template-rows: 4em 12em 12em
         grid-template-columns: 200px 200px 200px
         grid-template-areas: 'head head head' 'foto cr1 cr2' 'cr3 cr4 .'
+        @include smallScreen
+            grid-template-areas: 'head head head' 'foto cr1 cr2' 'cr3 . cr4'
         @include tablet
             grid-template-rows: 4em 12em 12em 12em
             grid-template-columns: 150px 150px
@@ -143,6 +145,8 @@
         grid-template-rows: 4em 12em 12em
         grid-template-columns: 200px 200px 200px
         grid-template-areas: 'head head head' 'com cr10 cr11' '. cr12 cr13'
+        @include smallScreen
+            grid-template-areas: 'head head head' 'com cr10 cr11' 'cr12 . cr13'
         @include tablet
             grid-template-rows: 4em 12em 12em 12em
             grid-template-columns: 150px 150px

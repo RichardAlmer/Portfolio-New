@@ -36,7 +36,7 @@
   font-family: "Audiowide", cursive;
 }
 
-@media screen and (max-width: 480px) and (orientation: landscape) {
+@media screen and (max-width: 480px) {
   #container .nav a {
     margin: 0 0.5em;
   }

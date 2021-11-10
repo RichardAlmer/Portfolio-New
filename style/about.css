@@ -16,7 +16,7 @@
       grid-template-areas: 'text text' 'front back';
 }
 
-@media screen and (max-width: 800px) and (orientation: landscape) {
+@media screen and (max-width: 800px) {
   .two {
     height: auto;
     -ms-grid-rows: 1fr 1fr 1fr;
@@ -40,7 +40,7 @@
   text-align: center;
 }
 
-@media screen and (max-width: 800px) and (orientation: landscape) {
+@media screen and (max-width: 800px) {
   .two #atext {
     margin-top: 3em;
   }
@@ -86,7 +86,7 @@
   text-align: center;
 }
 
-@media screen and (max-width: 800px) and (orientation: landscape) {
+@media screen and (max-width: 800px) {
   .two #front {
     margin-top: 2.5em;
   }
@@ -108,13 +108,13 @@
   margin: 0.5em 0;
 }
 
-@media screen and (max-width: 1020px) and (orientation: landscape) {
+@media screen and (max-width: 1020px) {
   .two #front .bar {
     width: 350px;
   }
 }
 
-@media screen and (max-width: 480px) and (orientation: landscape) {
+@media screen and (max-width: 480px) {
   .two #front .bar {
     width: 300px;
   }
@@ -142,13 +142,13 @@
   width: 270px;
 }
 
-@media screen and (max-width: 1020px) and (orientation: landscape) {
+@media screen and (max-width: 1020px) {
   .two #front .bar .bhtml {
     width: 225px;
   }
 }
 
-@media screen and (max-width: 480px) and (orientation: landscape) {
+@media screen and (max-width: 480px) {
   .two #front .bar .bhtml {
     width: 180px;
   }
@@ -158,13 +158,13 @@
   width: 210px;
 }
 
-@media screen and (max-width: 1020px) and (orientation: landscape) {
+@media screen and (max-width: 1020px) {
   .two #front .bar .bcss {
     width: 175px;
   }
 }
 
-@media screen and (max-width: 480px) and (orientation: landscape) {
+@media screen and (max-width: 480px) {
   .two #front .bar .bcss {
     width: 140px;
   }
@@ -174,13 +174,13 @@
   width: 270px;
 }
 
-@media screen and (max-width: 1020px) and (orientation: landscape) {
+@media screen and (max-width: 1020px) {
   .two #front .bar .bjs {
     width: 225px;
   }
 }
 
-@media screen and (max-width: 480px) and (orientation: landscape) {
+@media screen and (max-width: 480px) {
   .two #front .bar .bjs {
     width: 180px;
   }
@@ -190,13 +190,13 @@
   width: 210px;
 }
 
-@media screen and (max-width: 1020px) and (orientation: landscape) {
+@media screen and (max-width: 1020px) {
   .two #front .bar .bts {
     width: 175px;
   }
 }
 
-@media screen and (max-width: 480px) and (orientation: landscape) {
+@media screen and (max-width: 480px) {
   .two #front .bar .bts {
     width: 140px;
   }
@@ -206,13 +206,13 @@
   width: 150px;
 }
 
-@media screen and (max-width: 1020px) and (orientation: landscape) {
+@media screen and (max-width: 1020px) {
   .two #front .bar .bang {
     width: 125px;
   }
 }
 
-@media screen and (max-width: 480px) and (orientation: landscape) {
+@media screen and (max-width: 480px) {
   .two #front .bar .bang {
     width: 100px;
   }
@@ -246,13 +246,13 @@
   margin: 0.5em 0;
 }
 
-@media screen and (max-width: 1020px) and (orientation: landscape) {
+@media screen and (max-width: 1020px) {
   .two #back .bar {
     width: 350px;
   }
 }
 
-@media screen and (max-width: 480px) and (orientation: landscape) {
+@media screen and (max-width: 480px) {
   .two #back .bar {
     width: 300px;
   }
@@ -280,13 +280,13 @@
   width: 270px;
 }
 
-@media screen and (max-width: 1020px) and (orientation: landscape) {
+@media screen and (max-width: 1020px) {
   .two #back .bar .bphp {
     width: 225px;
   }
 }
 
-@media screen and (max-width: 480px) and (orientation: landscape) {
+@media screen and (max-width: 480px) {
   .two #back .bar .bphp {
     width: 180px;
   }
@@ -296,13 +296,13 @@
   width: 270px;
 }
 
-@media screen and (max-width: 1020px) and (orientation: landscape) {
+@media screen and (max-width: 1020px) {
   .two #back .bar .bsql {
     width: 225px;
   }
 }
 
-@media screen and (max-width: 480px) and (orientation: landscape) {
+@media screen and (max-width: 480px) {
   .two #back .bar .bsql {
     width: 180px;
   }
@@ -312,13 +312,13 @@
   width: 180px;
 }
 
-@media screen and (max-width: 1020px) and (orientation: landscape) {
+@media screen and (max-width: 1020px) {
   .two #back .bar .bsym {
     width: 150px;
   }
 }
 
-@media screen and (max-width: 480px) and (orientation: landscape) {
+@media screen and (max-width: 480px) {
   .two #back .bar .bsym {
     width: 120px;
   }
@@ -328,13 +328,13 @@
   width: 150px;
 }
 
-@media screen and (max-width: 1020px) and (orientation: landscape) {
+@media screen and (max-width: 1020px) {
   .two #back .bar .baja {
     width: 125px;
   }
 }
 
-@media screen and (max-width: 480px) and (orientation: landscape) {
+@media screen and (max-width: 480px) {
   .two #back .bar .baja {
     width: 100px;
   }

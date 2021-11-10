@@ -17,7 +17,7 @@ body {
   overflow-y: hidden;
 }
 
-@media screen and (max-width: 1020px) and (orientation: landscape) {
+@media screen and (max-width: 1020px) {
   body {
     overflow-y: auto;
   }
@@ -36,7 +36,7 @@ body #container {
       grid-template-areas: 'head head head' 'control game instract' 'back back back';
 }
 
-@media screen and (max-width: 1020px) and (orientation: landscape) {
+@media screen and (max-width: 1020px) {
   body #container {
     -ms-grid-rows: 5em 1fr 5em 10em 17em;
         grid-template-rows: 5em 1fr 5em 10em 17em;
@@ -46,7 +46,7 @@ body #container {
   }
 }
 
-@media screen and (max-width: 800px) and (orientation: landscape) {
+@media screen and (max-width: 800px) {
   body #container {
     -ms-grid-rows: 5em 1fr 5em 9em 16em;
         grid-template-rows: 5em 1fr 5em 9em 16em;
