@@ -96,7 +96,7 @@
   cursor: url(cursor/tailless_red.png), auto !important;
 }
 
-.one #imgRichard {
+.one #photo {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: img;
@@ -105,33 +105,26 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.one #photo #imgRichard {
   margin-right: 4em;
   border: 10px solid #001fe9;
   border-radius: 50%;
 }
 
 @media screen and (max-width: 800px) {
-  .one #imgRichard {
+  .one #photo #imgRichard {
     margin-right: 0;
     margin-bottom: 4em;
   }
 }
 
-.one #aGame {
+.one #photo #aGame {
   display: none;
   text-decoration: none;
   font-family: "Press Start 2P", cursive;
   color: #001fe9;
   font-size: 3em;
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: img;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  margin-right: 1em;
-  z-index: 2;
 }
 /*# sourceMappingURL=home.css.map */
